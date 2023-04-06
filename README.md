@@ -31,6 +31,14 @@ This project is used by the following companies:
 
 To deploy this project
 
+Set in .env your domain name,
+
+example:
+
+```bash
+  DOMAIN_NAME=`localhost`
+```
+
 ```bash
   docker-compose up -d
 ```
