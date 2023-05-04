@@ -1,13 +1,14 @@
-
+import NavbarComponent from "./Component/Navbar";
+import MainPresentation from "./page/MainPresentation";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        
+        <NavbarComponent/>
       </header>
       <main>
-        Hello
+        {/* <MainPresentation/> */}
       </main>
     </div>
   );
