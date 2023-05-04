@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar } from '@nextui-org/react'
+import { Navbar, Button } from '@nextui-org/react'
 import logo from '../assets/Logo_Globtermic.png'
 
 export default function NavbarComponent() {
@@ -7,24 +7,24 @@ export default function NavbarComponent() {
     <div>
         <Navbar variant="sticky" maxWidth={"fluid"} isBordered>
             <Navbar.Brand>
-                <img src={logo} style={{ width: "40px"}}/>
+                <img src={logo} style={{ width: "40px", marginLeft: "10px"}}/>
             </Navbar.Brand>
-            <Navbar.Content gap={'$15'}>
-                <Navbar.Link>
+            <Navbar.Content gap={'$5'}>
+                <Button style={{height: "100%"}} light auto>
                     Accueil
-                </Navbar.Link>
-                <Navbar.Link>
+                </Button>
+                <Button style={{height: "100%"}} light auto>
                     Nos modèles
-                </Navbar.Link>
-                <Navbar.Link>
+                </Button>
+                <Button style={{height: "100%"}} light auto>
                     Nos articles
-                </Navbar.Link>
-                <Navbar.Link>
+                </Button>
+                <Button style={{height: "100%"}} light auto>
                     Qui sommes nous
-                </Navbar.Link>
-                <Navbar.Link>
+                </Button>
+                <Button style={{height: "100%"}} light auto>
                     Contact
-                </Navbar.Link>
+                </Button>
             </Navbar.Content>
         </Navbar>
     </div>
