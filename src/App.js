@@ -1,5 +1,5 @@
 import NavbarComponent from "./Component/Navbar";
-import MainPresentation from "./page/MainPresentation";
+import MainPresentation from "./page/FirstPage"
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
         <NavbarComponent/>
       </header>
       <main>
-        {/* <MainPresentation/> */}
+        <MainPresentation/>
       </main>
     </div>
   );
