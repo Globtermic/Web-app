@@ -7,7 +7,7 @@ export default function NavbarComponent() {
     <div>
         <Navbar variant="sticky" maxWidth={"fluid"} isBordered>
             <Navbar.Brand>
-                <img src={logo} style={{ width: "40px", marginLeft: "10px"}}/>
+                <img src={logo} alt="logo of compagnie" style={{ width: "40px", marginLeft: "10px"}}/>
             </Navbar.Brand>
             <Navbar.Content gap={'$5'}>
                 <Button style={{height: "100%"}} light auto>

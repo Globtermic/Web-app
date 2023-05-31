@@ -1,4 +1,4 @@
-import transparancia from '../assets/Transparancia - vue 3_4.jpg'
+// import transparancia from '../assets/Transparancia - vue 3_4.jpg'
 import React from 'react'
 
 export default function MainPresentation() {
