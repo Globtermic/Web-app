@@ -1,5 +1,5 @@
 import NavbarComponent from "./Component/Navbar";
-import MainPresentation from "./page/FirstPage"
+import MainPresentation from "./page/HomePage"
 
 function App() {
   return (
