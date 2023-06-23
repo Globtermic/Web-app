@@ -2,6 +2,18 @@ import image from '../assets/Transparancia - vue 3_4.jpg'
 import React from 'react'
 import { Card, Col, Text, Image, Spacer } from "@nextui-org/react";
 import MaterialCarousel from '../Component/MaterialCarousel';
+import { useState, useEffect } from 'react';
+
+function PresentationAsset({width, title}) {
+  return <div style={{display:'flex', justifyContent:'center', marginBottom:20, alignItems:'center'}}>
+    <Card style={{alignItems:'center', width: "75%", top: "25px", height: "500px", maxWidth: {width}, border:'2px solid black' }}>
+      <Card.Body>
+        <h1>{title}</h1>
+        </Card.Body>
+    </Card>
+  </div>
+}
+
 
 function IntroPage() {
   return (
@@ -41,11 +53,27 @@ function MaterialContruction() {
 }
 
 export default function MainPresentation() {
+  const [windowSize, setWindowSize] = useState([window.innerWidth, window.innerHeight]);
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowSize([window.innerWidth, window.innerHeight]);
+    };
+    window.addEventListener('resize', handleWindowResize);
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    }
+  }
+  );
   return (
     <div>
       <IntroPage/>
       <Spacer y={3}/>
       <MaterialContruction/>
+      <Spacer y={3}/>
+      <PresentationAsset width={windowSize[0]} title={"CARTE 1"} />
+      <PresentationAsset width={windowSize[0]} title={"CARTE 2"} />
+      <PresentationAsset width={windowSize[0]} title={"CARTE 3"} />
+      <PresentationAsset width={windowSize[0]} title={"CARTE 4"} />
     </div>
   )
 }
