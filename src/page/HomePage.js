@@ -3,15 +3,88 @@ import React from 'react'
 import { Card, Col, Text, Image, Spacer } from "@nextui-org/react";
 import MaterialCarousel from '../Component/MaterialCarousel';
 import { useState, useEffect } from 'react';
+import torres from '../assets/Torres_vueFace.jpg';
+import terrazza from '../assets/Terrazza_vue3.jpg';
+import "@fontsource/montserrat";
+import './HomePageStyles.css';
+import transparencia from '../assets/Transparancia_vueInt.jpg';
 
-function PresentationAsset({width, title}) {
-  return <div style={{display:'flex', justifyContent:'center', marginBottom:20, alignItems:'center'}}>
-    <Card style={{alignItems:'center', width: "75%", top: "25px", height: "500px", maxWidth: {width}, border:'2px solid black' }}>
-      <Card.Body>
-        <h1>{title}</h1>
-        </Card.Body>
-    </Card>
-  </div>
+function PresentationConstructionAsset() {
+  return <div style={{position: "relative"}} className='a'>
+  <Image
+    src={torres}
+    objectFit='cover'
+    width="100%"
+    alt="test"
+    height={800}
+    
+    />
+    <h1 size={50} className= 'constructionTextMainPresStyle'>
+      CONSTRUCTIONS
+    </h1>
+    <h1 size={50} className='constructionTextSecPresStyle'>
+      MAISONS INDIVIDUELLES
+    </h1>
+    <h1 size={50} className='constructionTextThirdPresStyle'>
+      EXTENSIONS
+    </h1>
+    <h1 size={50} className='constructionTextFourthPresStyle'>
+      GÎTES À LOUER
+    </h1>
+    
+</div>
+}
+
+function PresentationRenovationAsset() {
+  return <div style={{position: "relative"}} className='a'>
+  <Image
+    src={terrazza}
+    objectFit='cover'
+    width="100%"
+    alt="test"
+    height={800}
+    
+    />
+    <h1 size={50} className='renovationTextMainPresStyle'>
+      RENOVATIONS
+    </h1>
+    <h1 size={50}  className='renovationTextSecPresStyle'>
+      TITRE 1
+    </h1>
+    <h1 size={50} className='renovationTextThirdPresStyle'>
+      TITRE 2
+    </h1>
+    <h1 size={50} className='renovationTextFourthPresStyle'>
+      TITRE 3
+    </h1>
+    
+</div>
+}
+
+function PresentationAmenagementAsset() {
+  return <div style={{position: "relative"}} className='a'>
+  <Image
+    src={transparencia}
+    objectFit='cover'
+    width="100%"
+    alt="test"
+    height={800}
+    
+    />
+    <h1 size={50} className='constructionTextMainPresStyle'>
+      AMÉNAGEMENTS ÉXTERIEURS
+    </h1>
+    <h1 size={50}  className='constructionTextSecPresStyle'>
+      JARDIN EN PERMACULTURE
+    </h1>
+    <h1 size={50} className='constructionTextThirdPresStyle'>
+      TITRE 2
+    </h1>
+    <h1 size={50} className='constructionTextFourthPresStyle'>
+      CONSTRUCTION DE PISCINES
+    </h1>
+    
+</div>
 }
 
 
@@ -39,7 +112,8 @@ function IntroPage() {
           top: "50%", 
           width: "75%", 
           transform: "translate(-50%, -50%)", 
-          color: "white",}}>
+          color: "white",
+          textShadow: "2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000"}}>
           RÉINVENTONS NOTRE MODE DE VIE ET FAISONS ÉVOLUER NOTRE VISION DE L'HABITAT
         </h1>
     </div>
@@ -70,10 +144,12 @@ export default function MainPresentation() {
       <Spacer y={3}/>
       <MaterialContruction/>
       <Spacer y={3}/>
-      <PresentationAsset width={windowSize[0]} title={"CARTE 1"} />
-      <PresentationAsset width={windowSize[0]} title={"CARTE 2"} />
-      <PresentationAsset width={windowSize[0]} title={"CARTE 3"} />
-      <PresentationAsset width={windowSize[0]} title={"CARTE 4"} />
+      <PresentationConstructionAsset/>
+      <Spacer y={3}/>
+      <PresentationRenovationAsset/>
+      <Spacer y={3}/>
+      <PresentationAmenagementAsset/>
+      <Spacer y={3}/>
     </div>
   )
 }
