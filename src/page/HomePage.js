@@ -2,7 +2,6 @@ import image from '../assets/Transparancia - vue 3_4.jpg'
 import React from 'react'
 import { Card, Col, Text, Image, Spacer } from "@nextui-org/react";
 import MaterialCarousel from '../Component/MaterialCarousel';
-import { useState, useEffect } from 'react';
 import torres from '../assets/Torres_vueFace.jpg';
 import terrazza from '../assets/Terrazza_vue3.jpg';
 import "@fontsource/montserrat";
@@ -113,7 +112,7 @@ function IntroPage() {
           width: "75%", 
           transform: "translate(-50%, -50%)", 
           color: "white",
-          textShadow: "2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000"}}>
+          backgroundColor: "rgba(0,0,0,.3)",}}>
           RÉINVENTONS NOTRE MODE DE VIE ET FAISONS ÉVOLUER NOTRE VISION DE L'HABITAT
         </h1>
     </div>
@@ -127,17 +126,6 @@ function MaterialContruction() {
 }
 
 export default function MainPresentation() {
-  const [windowSize, setWindowSize] = useState([window.innerWidth, window.innerHeight]);
-  useEffect(() => {
-    const handleWindowResize = () => {
-      setWindowSize([window.innerWidth, window.innerHeight]);
-    };
-    window.addEventListener('resize', handleWindowResize);
-    return () => {
-      window.removeEventListener('resize', handleWindowResize);
-    }
-  }
-  );
   return (
     <div>
       <IntroPage/>
