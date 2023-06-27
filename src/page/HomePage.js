@@ -7,6 +7,7 @@ import terrazza from '../assets/Terrazza_vue3.jpg';
 import "@fontsource/montserrat";
 import './HomePageStyles.css';
 import transparencia from '../assets/Transparancia_vueInt.jpg';
+import { Helmet } from 'react-helmet';
 
 function PresentationConstructionAsset() {
   return <div style={{position: "relative"}} className='a'>
@@ -128,6 +129,9 @@ function MaterialContruction() {
 export default function MainPresentation() {
   return (
     <div>
+      <Helmet>
+        <title>Globtermic</title>
+        </Helmet>
       <IntroPage/>
       <Spacer y={3}/>
       <MaterialContruction/>
