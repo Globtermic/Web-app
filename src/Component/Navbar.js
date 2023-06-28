@@ -28,7 +28,7 @@ export default function NavbarComponent() {
                     <Button style={{height: "100%"}} light auto ripple={false}>
                         Nos articles
                     </Button>
-                    <Button style={{height: "100%"}} light auto onPress={() => goto("/Movida")} ripple={false}>
+                    <Button style={{height: "100%"}} light auto ripple={false}>
                         Qui sommes nous
                     </Button>
                     <Button style={{height: "100%"}} light auto onPress={() => goto("/contact")} ripple={false}>
