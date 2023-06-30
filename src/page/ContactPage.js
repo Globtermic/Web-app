@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import { Card, Text, Spacer, Textarea, Grid, Button } from '@nextui-org/react'
 import emailjs from '@emailjs/browser'
+import { Helmet } from 'react-helmet'
 
 export default function ContactPage() {
   const name = useRef('')
@@ -28,6 +29,7 @@ export default function ContactPage() {
   };
 
   return (
+    
     <div className='ContactPage' style={{
         position: "absolute",
         top: "0",
@@ -35,6 +37,9 @@ export default function ContactPage() {
         width: "100%",
         height: "100%",
         }}>
+          <Helmet>
+        <title>Globtermic | Contact</title>
+        </Helmet>
         <Card style={{ width: '75%', height: '75%', maxWidth: '1080px', transform: 'translate(-50%, -50%)', left: '50%', top: '50%' }}>
           <Card.Header>
             <Text h1>

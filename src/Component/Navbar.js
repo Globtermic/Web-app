@@ -22,7 +22,7 @@ export default function NavbarComponent() {
                     <Button style={{height: "100%"}} light auto onPress={() => goto("/")} ripple={false} >
                         Accueil
                     </Button>
-                    <Button style={{height: "100%"}} light auto ripple={false}>
+                    <Button style={{height: "100%"}} light auto onPress={() =>goto("/modeles")} ripple={false}>
                         Nos modèles
                     </Button>
                     <Button style={{height: "100%"}} light auto ripple={false}>
