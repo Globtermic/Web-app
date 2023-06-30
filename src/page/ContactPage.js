@@ -1,7 +1,32 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Card, Text, Spacer, Textarea, Grid, Button } from '@nextui-org/react'
+import emailjs from '@emailjs/browser'
 
 export default function ContactPage() {
+  const name = useRef('')
+  const email = useRef('')
+  const subject = useRef('')
+  const message = useRef('')
+
+  
+
+  function sendEmail() {
+    const form = {
+      name: name.current.value,
+      email: email.current.value,
+      subject: subject.current.value,
+      message: message.current.value
+    }
+
+    console.log(form)
+    emailjs.send('service_ljd0iwp', 'template_mqpjtw1', form, 'Spo1_FXhT5O8SxBMa')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
     <div className='ContactPage' style={{
         position: "absolute",
@@ -33,6 +58,7 @@ export default function ContactPage() {
                     underlined
                     width='90%'
                     maxRows={2}
+                    ref={name}
                   />
                   <Spacer y={2}/>
                   <Textarea
@@ -42,6 +68,7 @@ export default function ContactPage() {
                     width='90%'
                     size="lg"
                     maxRows={2}
+                    ref={email}
                   />
                   <Spacer y={2}/>
                   <Textarea
@@ -51,6 +78,7 @@ export default function ContactPage() {
                     width='90%'
                     size="lg"
                     maxRows={2}
+                    ref={subject}
                   />
                   <Spacer y={2}/>
                   <Textarea
@@ -60,8 +88,10 @@ export default function ContactPage() {
                     width='90%'
                     size="lg"
                     minRows rows={6}
+                    ref={message}
                   />
-                  <Button>
+                  <Spacer y={2}/>
+                  <Button onPress={() => sendEmail()}>
                     Send
                   </Button>
                 </Grid> 
