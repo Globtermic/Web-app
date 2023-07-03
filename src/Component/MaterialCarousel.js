@@ -3,6 +3,7 @@ import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-re
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { Pagination, Card, Spacer, Image } from '@nextui-org/react';
 import dummy from '../assets/materiauxBio.jpg';
+import { useTranslation } from 'react-i18next';
 
 const styles = {
   titleStyle: {
@@ -20,15 +21,16 @@ const styles = {
 }
 
 function BioMaterial() {
+  const {t, i18n} = useTranslation();
   return(
     <div style={{height: "100%", width: "100%", alignItems:'center'}}>
-     <h1 style = {{color: '#558F36', textAlign:'center'}}>NOS MATERIAUX</h1>
+     <h1 style = {{color: '#558F36', textAlign:'center'}}>{t('homepage:ourMaterials').toUpperCase()}</h1>
      <div style={{height: "100%", width: "100%", display: "flex"}}>
       <div className='text' style={{height: "100%", width: "50%", alignItems:'center'}}>
        
-      <h3 style ={styles.titleStyle}>Pour construire nos maisons, nous optons pour un panachage d'ossatureBois et de C.L.T</h3>
-        <h3 style ={styles.titleStyle}>En anglais le <b>cross laminated timber</b>, en francais <b>lamellé de bois croisé</b>, le C.L.T est un ensemble de bois collés, et est <b>très résistant</b> </h3>
-        <h3 style={styles.titleStyle}>Sa résistance est comparable au béton ! Il existe des immeubles de plus de 20 étages construits avec cette technique.</h3>
+      <h3 style ={styles.titleStyle}>{t('homepage:inOrderToBuildOurHouses')}</h3>
+        <h3 style ={styles.titleStyle}>{t('homepage:cLT')}</h3>
+        <h3 style={styles.titleStyle}>{t('homepage:cltResistance')}</h3>
       </div>
       <div className='image' style={{left: "50%", width:"50%"}}>
         <Image src={dummy} style={{borderRadius:15}}
@@ -40,16 +42,17 @@ function BioMaterial() {
 }
 
 function SelfSufficiency() {
+  const {t, i18n} = useTranslation();
   return(
     <div style={{height: "100%", width: "100%", alignItems:'center'}}>
-     <h1 style = {{color: '#558F36', textAlign:'center'}}>VERS LA MAISON AUTOSUFFISANTE</h1>
+     <h1 style = {{color: '#558F36', textAlign:'center'}}>{t('homepage:inRouteForSelfSufficentHouse').toUpperCase()}</h1>
      <div style={{height: "100%", width: "100%", display: "flex"}}>
       <div className='text' style={{height: "100%", width: "50%", alignItems:'center'}}>
        
-        <h3 style ={styles.titleStyle}>Nous accompagnons ceux qui le souhaitent vers <b>la maison autosuffisante</b></h3>
-        <h3 style ={styles.titleStyle}>1. <b>Les panneaux photovoltaïques</b> installés sur les toits terrasses</h3>
-        <h3 style ={styles.textStyle}>2. La récupération et le filtrage de l'eau de pluie.</h3>
-        <h3 style ={styles.textStyle}>3. La possibilité d'avoir un jardin en permaculture</h3>
+        <h3 style ={styles.titleStyle}>{t('homepage:weAccompanyEveryoneToTheSelfSufficentHouse')}</h3>
+        <h3 style ={styles.titleStyle}>1. {t('homepage:solarPanels') }</h3>
+        <h3 style ={styles.textStyle}>2. {t('homepage:rainWaterRecuperation')}</h3>
+        <h3 style ={styles.textStyle}>3. {t('homepage:permaCulture')} </h3>
       </div>
       <div className='image' style={{left: "50%", width:"50%"}}>
         <Image src={dummy} style={{borderRadius:15}}

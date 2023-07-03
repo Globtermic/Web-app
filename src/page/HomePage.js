@@ -8,8 +8,10 @@ import "@fontsource/montserrat";
 import './HomePageStyles.css';
 import transparencia from '../assets/Transparancia_vueInt.jpg';
 import { Helmet } from 'react-helmet';
+import { useTranslation } from 'react-i18next';
 
 function PresentationConstructionAsset() {
+  const {t, i18n} = useTranslation();
   return <div style={{position: "relative"}} className='a'>
   <Image
     src={torres}
@@ -20,22 +22,23 @@ function PresentationConstructionAsset() {
     
     />
     <h1 size={50} className= 'constructionTextMainPresStyle'>
-      CONSTRUCTIONS
+      {t('homepage:constructions').toUpperCase()}
     </h1>
     <h1 size={50} className='constructionTextSecPresStyle'>
-      MAISONS INDIVIDUELLES
+    {t('homepage:individualHouses').toUpperCase()}
     </h1>
     <h1 size={50} className='constructionTextThirdPresStyle'>
-      EXTENSIONS
+    {t('homepage:extensions').toUpperCase()}
     </h1>
     <h1 size={50} className='constructionTextFourthPresStyle'>
-      GÎTES À LOUER
+    {t('homepage:cottagesForRent').toUpperCase()}
     </h1>
     
 </div>
 }
 
 function PresentationRenovationAsset() {
+  const {t, i18n} = useTranslation();
   return <div style={{position: "relative"}} className='a'>
   <Image
     src={terrazza}
@@ -46,7 +49,7 @@ function PresentationRenovationAsset() {
     
     />
     <h1 size={50} className='renovationTextMainPresStyle'>
-      RENOVATIONS
+      {t('homepage:renovations').toUpperCase()}
     </h1>
     <h1 size={50}  className='renovationTextSecPresStyle'>
       TITRE 1
@@ -62,6 +65,7 @@ function PresentationRenovationAsset() {
 }
 
 function PresentationAmenagementAsset() {
+  const {t, i18n} = useTranslation();
   return <div style={{position: "relative"}} className='a'>
   <Image
     src={transparencia}
@@ -72,16 +76,16 @@ function PresentationAmenagementAsset() {
     
     />
     <h1 size={50} className='constructionTextMainPresStyle'>
-      AMÉNAGEMENTS ÉXTERIEURS
+      {t('homepage:exteriorFacilities').toUpperCase()}
     </h1>
     <h1 size={50}  className='constructionTextSecPresStyle'>
-      JARDIN EN PERMACULTURE
+    {t('homepage:permacultureGarden').toUpperCase()}
     </h1>
     <h1 size={50} className='constructionTextThirdPresStyle'>
       TITRE 2
     </h1>
     <h1 size={50} className='constructionTextFourthPresStyle'>
-      CONSTRUCTION DE PISCINES
+    {t('homepage:poolConstruction').toUpperCase()}
     </h1>
     
 </div>
@@ -89,6 +93,7 @@ function PresentationAmenagementAsset() {
 
 
 function IntroPage() {
+  const {t, i18n} = useTranslation();
   return (
     <div style={{position: "relative"}} className=''>
       <Image
@@ -114,7 +119,7 @@ function IntroPage() {
           transform: "translate(-50%, -50%)", 
           color: "white",
           backgroundColor: "rgba(0,0,0,.3)",}}>
-          RÉINVENTONS NOTRE MODE DE VIE ET FAISONS ÉVOLUER NOTRE VISION DE L'HABITAT
+          {t('homepage:catchSentance').toUpperCase()}
         </h1>
     </div>
   )

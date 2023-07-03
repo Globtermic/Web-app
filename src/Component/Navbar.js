@@ -2,8 +2,10 @@ import React from 'react'
 import { Navbar, Button } from '@nextui-org/react'
 import logo from '../assets/Logo_Globtermic.png'
 import { useNavigate } from "react-router-dom"
+import { useTranslation } from 'react-i18next'
 
 export default function NavbarComponent() {
+    const {t, i18n} = useTranslation();
     const navigate = useNavigate()
 
     function goto(path) {
@@ -20,19 +22,19 @@ export default function NavbarComponent() {
                 </Navbar.Brand>
                 <Navbar.Content gap={'$5'} hideIn="xs">
                     <Button style={{height: "100%"}} light auto onPress={() => goto("/")} ripple={false} >
-                        Accueil
+                        {t('navbar:homePage')}
                     </Button>
                     <Button style={{height: "100%"}} light auto onPress={() =>goto("/modeles")} ripple={false}>
-                        Nos modèles
+                    {t('navbar:ourModels')}
                     </Button>
                     <Button style={{height: "100%"}} light auto ripple={false}>
-                        Nos articles
+                    {t('navbar:ourArticles')}
                     </Button>
                     <Button style={{height: "100%"}} light auto ripple={false}>
-                        Qui sommes nous
+                    {t('navbar:aboutUs')}
                     </Button>
                     <Button style={{height: "100%"}} light auto onPress={() => goto("/contact")} ripple={false}>
-                        Contact
+                    {t('navbar:contact')}
                     </Button>
                 </Navbar.Content>
             </Navbar>

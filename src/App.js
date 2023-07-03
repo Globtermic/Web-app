@@ -11,6 +11,7 @@ import TorresPage  from "./page/Models/TorresPage";
 import TransparenciaPage from "./page/Models/TransparenciaPage";
 import XcasaPage from "./page/Models/XcasaPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./languages";
 
 function App() {
   return (
