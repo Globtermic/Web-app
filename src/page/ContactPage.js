@@ -1,11 +1,35 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Card, Text, Spacer, Textarea, Grid, Button } from '@nextui-org/react'
+import emailjs from '@emailjs/browser'
 import { Helmet } from 'react-helmet'
 import { useNavigation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 export default function ContactPage() {
   const {t, i18n} = useTranslation();
+  const name = useRef('')
+  const email = useRef('')
+  const subject = useRef('')
+  const message = useRef('')
+
+  
+
+  function sendEmail() {
+    const form = {
+      name: name.current.value,
+      email: email.current.value,
+      subject: subject.current.value,
+      message: message.current.value
+    }
+
+    console.log(form)
+    emailjs.send('service_ljd0iwp', 'template_mqpjtw1', form, 'Spo1_FXhT5O8SxBMa')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     
     <div className='ContactPage' style={{
@@ -41,6 +65,7 @@ export default function ContactPage() {
                     underlined
                     width='90%'
                     maxRows={2}
+                    ref={name}
                   />
                   <Spacer y={2}/>
                   <Textarea
@@ -50,6 +75,7 @@ export default function ContactPage() {
                     width='90%'
                     size="lg"
                     maxRows={2}
+                    ref={email}
                   />
                   <Spacer y={2}/>
                   <Textarea
@@ -59,6 +85,7 @@ export default function ContactPage() {
                     width='90%'
                     size="lg"
                     maxRows={2}
+                    ref={subject}
                   />
                   <Spacer y={2}/>
                   <Textarea
@@ -68,6 +95,7 @@ export default function ContactPage() {
                     width='90%'
                     size="lg"
                     minRows rows={6}
+                    ref={message}
                   />
                   <Button>
                   {t('contactpage:send')}
