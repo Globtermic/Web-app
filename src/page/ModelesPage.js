@@ -48,7 +48,7 @@ export default function ModelesPage() {
         </div>
         <Spacer y={2} />
         <Grid.Container gap={2} justify="center" direction="column">
-            <Grid xl direction="row">
+            <Grid sm direction="row">
         <CardModel title={"ESCENCIA"} Data={Escencia} path={"/Escencia"}/>
         <Spacer y={1}/>
         <CardModel title={"MOVIDA"} Data={Movida} path={"/Movida"}/>
@@ -56,7 +56,7 @@ export default function ModelesPage() {
         <CardModel title={"TERRAZZA"} Data={Terrazza} path={"/Terrazza"}/>
         </Grid>
         <Spacer y={1} />
-            <Grid xl direction="row" >
+            <Grid sm direction="row" >
         <CardModel title={"NATURA"} Data={Natura} path={"/Natura"}/>
         <Spacer y={1}/>
         <CardModel title={"PATIO"} Data={Patio} path={"/Patio"}/>
@@ -64,7 +64,7 @@ export default function ModelesPage() {
         <CardModel title={"TORRES"} Data={Torres} path={"/Torres"}/>
         </Grid>
         <Spacer y={1} />
-            <Grid xl direction="row">
+            <Grid sm direction="row">
         <CardModel title={"TRANSPARENCIA"} Data={Transparencia} path={"/Transparencia"}/>
         <Spacer y={1}/>
         <CardModel title={"XCASA"} Data={Xcasa} path={"/Xcasa"}/>
