@@ -94,7 +94,7 @@ export default function MaterialCarousel() {
     return (
       
       <div className="App" style={{height: "800px"}}>
-        <Button onPress={() => console.log(activeSlide)}></Button>
+        {/* <Button onPress={() => console.log(activeSlide)}></Button> */}
         <CarouselProvider
           naturalSlideWidth={100}
           naturalSlideHeight={100}
