@@ -1,4 +1,4 @@
-import { Card, Image, Row, Spacer, Button } from "@nextui-org/react";
+import { Card, Image, Grid, Spacer, Button } from "@nextui-org/react";
 import { Escencia, Movida, Terrazza, Natura, Patio, Torres, Transparencia, Xcasa } from "./ModelesData";
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { Helmet } from "react-helmet";
@@ -15,7 +15,7 @@ function CardModel({title, Data, path}) {
         )
     }
 
-    return <Card variant="flat" style={{backgroundColor:'white', borderRadius:0, padding: -10, width:"31%", border: "1px solid black", alignItems:'center', overflow:'hidden', marginTop:'10px'}}>
+    return <Card variant="flat" style={{backgroundColor:'white', borderRadius:0, padding: -10, width:"100%", border: "1px solid black", alignItems:'center', overflow:'hidden', marginTop:'10px'}}>
     <Card.Body style={{marginTop:'-20px'}}>
         <Image src={Data[0]} width="100%" style={{ marginTop:0}}></Image>
     </Card.Body>
@@ -47,25 +47,29 @@ export default function ModelesPage() {
             <h1 style={{textAlign:'center', fontFamily:'Montserrat'}}>DÉCOUVREZ NOS MODELES!</h1>
         </div>
         <Spacer y={2} />
-        <Row justify="center">
+        <Grid.Container gap={2} justify="center" direction="column">
+            <Grid xl direction="row">
         <CardModel title={"ESCENCIA"} Data={Escencia} path={"/Escencia"}/>
         <Spacer y={1}/>
         <CardModel title={"MOVIDA"} Data={Movida} path={"/Movida"}/>
         <Spacer y={1}/>
         <CardModel title={"TERRAZZA"} Data={Terrazza} path={"/Terrazza"}/>
-        </Row>
-        <Spacer y={2} />
-        <Row justify="center">
+        </Grid>
+        <Spacer y={1} />
+            <Grid xl direction="row" >
         <CardModel title={"NATURA"} Data={Natura} path={"/Natura"}/>
         <Spacer y={1}/>
         <CardModel title={"PATIO"} Data={Patio} path={"/Patio"}/>
         <Spacer y={1}/>
         <CardModel title={"TORRES"} Data={Torres} path={"/Torres"}/>
-        </Row><Row justify="center">
+        </Grid>
+        <Spacer y={1} />
+            <Grid xl direction="row">
         <CardModel title={"TRANSPARENCIA"} Data={Transparencia} path={"/Transparencia"}/>
         <Spacer y={1}/>
         <CardModel title={"XCASA"} Data={Xcasa} path={"/Xcasa"}/>
-        </Row>
+        </Grid>
         <Spacer y={1} />
+        </Grid.Container>
     </div>
 }
