@@ -23,7 +23,8 @@ function PresentationConstructionAsset() {
     style={{filter: 'brightness(70%)'}}
     
     />
-    <h1 size={50} className= 'constructionTextMainPresStyle'>
+    <h1 size={50} className= 'constructionTextMainPresStyle'
+    style={{}}>
       {t('homepage:constructions').toUpperCase()}
     </h1>
     {/* <h1 size={50} className='constructionTextSecPresStyle'>
@@ -76,7 +77,8 @@ function PresentationAmenagementAsset() {
     width="100%"
     alt="test"
     height={800}
-    style={{filter: 'brightness(70%)'}}
+    style={{filter: 'brightness(70%)',}}
+    
     />
     <h1 size={50} className='constructionTextMainPresStyle'>
       {t('homepage:exteriorFacilities').toUpperCase()}
