@@ -1,9 +1,11 @@
 import React, {useState, useRef} from 'react';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import { Pagination, Card, Spacer, Image } from '@nextui-org/react';
+import { Pagination, Card, Spacer, Image, Button } from '@nextui-org/react';
 import dummy from '../assets/materiauxBio.jpg';
 import { useTranslation } from 'react-i18next';
+
+//use https://swiperjs.com/
 
 const styles = {
   titleStyle: {
@@ -92,6 +94,7 @@ export default function MaterialCarousel() {
     return (
       
       <div className="App" style={{height: "800px"}}>
+        <Button onPress={() => console.log(activeSlide)}></Button>
         <CarouselProvider
           naturalSlideWidth={100}
           naturalSlideHeight={100}
@@ -103,7 +106,7 @@ export default function MaterialCarousel() {
           
         >
             <Spacer y={3}/>
-            <Card style={{width: "75%", left: "50%", top: "25px", height: "500px", maxWidth: "900px", transform: "translate(-50%)"}}>
+            <Card borderWeight='normal' variant='bordered' style={{width: "75%", left: "50%", top: "25px", height: "500px", maxWidth: "900px", transform: "translate(-50%)"}}>
                 <Slider>
                      <Slide index={0} ><SelfSufficiency/></Slide>
                     <Slide index={1}><BioMaterial/></Slide>
