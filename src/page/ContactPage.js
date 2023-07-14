@@ -58,7 +58,7 @@ export default function ContactPage() {
                   <Spacer y={1}/>
                   <Text h3>03 44 02 59 50</Text>
                 </Grid>
-                <Grid alignContent='center' justify='center'>
+                <Grid xs={0} sm={6} alignContent='center' direction='column' justify='center' style={{width:"50%"}}>
                   <Textarea
                     aria-label='name'
                     labelPlaceholder={`${t('contactpage:firstName')} ${t('contactpage:lastName')}`}
@@ -97,7 +97,52 @@ export default function ContactPage() {
                     minRows rows={6}
                     ref={message}
                   />
-                  <Button>
+                  <Spacer y={1}/>
+                  <Button style={{width: "90%"}}>
+                  {t('contactpage:send')}
+                  </Button>
+                </Grid>
+                <Grid sm={0} alignContent='center' justify='center' style={{width:"100%"}}>
+                  <Textarea
+                    aria-label='name'
+                    labelPlaceholder={`${t('contactpage:firstName')} ${t('contactpage:lastName')}`}
+                    underlined
+                    width='90%'
+                    maxRows={2}
+                    ref={name}
+                  />
+                  <Spacer y={2}/>
+                  <Textarea
+                    aria-label='email'
+                    labelPlaceholder={t('contactpage:email')}
+                    underlined
+                    width='90%'
+                    size="lg"
+                    maxRows={2}
+                    ref={email}
+                  />
+                  <Spacer y={2}/>
+                  <Textarea
+                    aria-label='subject'
+                    labelPlaceholder={t('contactpage:subject')}
+                    underlined
+                    width='90%'
+                    size="lg"
+                    maxRows={2}
+                    ref={subject}
+                  />
+                  <Spacer y={2}/>
+                  <Textarea
+                    aria-label='message'
+                    labelPlaceholder={t('contactpage:message')}
+                    underlined
+                    width='90%'
+                    size="lg"
+                    minRows rows={6}
+                    ref={message}
+                  />
+                  <Spacer y={1}/>
+                  <Button style={{width: "90%"}}>
                   {t('contactpage:send')}
                   </Button>
                 </Grid> 
