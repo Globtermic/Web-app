@@ -9,6 +9,7 @@ import './HomePageStyles.css';
 import transparencia from '../assets/Transparancia_vueInt.jpg';
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
+import EndPage from '../Component/EndPage';
 
 function PresentationConstructionAsset() {
   const {t, i18n} = useTranslation();
@@ -19,12 +20,13 @@ function PresentationConstructionAsset() {
     width="100%"
     alt="test"
     height={800}
+    style={{filter: 'brightness(70%)'}}
     
     />
     <h1 size={50} className= 'constructionTextMainPresStyle'>
       {t('homepage:constructions').toUpperCase()}
     </h1>
-    <h1 size={50} className='constructionTextSecPresStyle'>
+    {/* <h1 size={50} className='constructionTextSecPresStyle'>
     {t('homepage:individualHouses').toUpperCase()}
     </h1>
     <h1 size={50} className='constructionTextThirdPresStyle'>
@@ -32,7 +34,7 @@ function PresentationConstructionAsset() {
     </h1>
     <h1 size={50} className='constructionTextFourthPresStyle'>
     {t('homepage:cottagesForRent').toUpperCase()}
-    </h1>
+    </h1> */}
     
 </div>
 }
@@ -46,12 +48,13 @@ function PresentationRenovationAsset() {
     width="100%"
     alt="test"
     height={800}
+    style={{filter: 'brightness(70%)'}}
     
     />
     <h1 size={50} className='renovationTextMainPresStyle'>
       {t('homepage:renovations').toUpperCase()}
     </h1>
-    <h1 size={50}  className='renovationTextSecPresStyle'>
+    {/* <h1 size={50}  className='renovationTextSecPresStyle'>
       TITRE 1
     </h1>
     <h1 size={50} className='renovationTextThirdPresStyle'>
@@ -59,7 +62,7 @@ function PresentationRenovationAsset() {
     </h1>
     <h1 size={50} className='renovationTextFourthPresStyle'>
       TITRE 3
-    </h1>
+    </h1> */}
     
 </div>
 }
@@ -73,12 +76,12 @@ function PresentationAmenagementAsset() {
     width="100%"
     alt="test"
     height={800}
-    
+    style={{filter: 'brightness(70%)'}}
     />
     <h1 size={50} className='constructionTextMainPresStyle'>
       {t('homepage:exteriorFacilities').toUpperCase()}
     </h1>
-    <h1 size={50}  className='constructionTextSecPresStyle'>
+    {/* <h1 size={50}  className='constructionTextSecPresStyle'>
     {t('homepage:permacultureGarden').toUpperCase()}
     </h1>
     <h1 size={50} className='constructionTextThirdPresStyle'>
@@ -86,7 +89,7 @@ function PresentationAmenagementAsset() {
     </h1>
     <h1 size={50} className='constructionTextFourthPresStyle'>
     {t('homepage:poolConstruction').toUpperCase()}
-    </h1>
+    </h1> */}
     
 </div>
 }
@@ -101,24 +104,17 @@ function IntroPage() {
         objectFit='cover'
         width="100%"
         alt="test"
-        style={{filter: "blur(5px)"}}
+    style={{filter: 'brightness(70%)'}}
         height={800}
         
         />
-        <div className="blur-overlay" style={{
-          top: "0",
-          left: "0",
-          width: "100%",
-          height: "100%",
-          backgroundColor: "rgba(0, 0, 0, 0.5)"}}/>
         <h1 size={50} style={{ 
           position: "absolute", 
           left: "50%", 
           top: "50%", 
           width: "75%", 
           transform: "translate(-50%, -50%)", 
-          color: "white",
-          backgroundColor: "rgba(0,0,0,.3)",}}>
+          color: "white",}}>
           {t('homepage:catchSentance').toUpperCase()}
         </h1>
     </div>
@@ -142,11 +138,10 @@ export default function MainPresentation() {
       <MaterialContruction/>
       <Spacer y={3}/>
       <PresentationConstructionAsset/>
-      <Spacer y={3}/>
       <PresentationRenovationAsset/>
-      <Spacer y={3}/>
       <PresentationAmenagementAsset/>
       <Spacer y={3}/>
+      <EndPage/>
     </div>
   )
 }

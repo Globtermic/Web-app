@@ -8,8 +8,7 @@
         font-family: Montserrat; 
         text-align: right; 
         display: inline-block; 
-        text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000
-    }
+     }
     .constructionTextSecPresStyle {
         position: absolute; 
         right:10px;
@@ -52,11 +51,10 @@
             left:10px;
             top: 5%; 
             font-size:300%;
-            color: black; 
+            color: white; 
             font-family: Montserrat; 
             text-align: left; 
             display: inline-block; 
-            text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff
        }
 
         .renovationTextSecPresStyle{
