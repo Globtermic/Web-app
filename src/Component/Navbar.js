@@ -21,13 +21,13 @@ export default function NavbarComponent() {
                     <img src={logo} alt="logo of compagnie" style={{ width: "40px", marginLeft: "10px"}}/>
                 </Navbar.Brand>
                 <Navbar.Content gap={'$5'} hideIn="xs">
-                    <Button style={{height: "100%"}} light auto onPress={() => goto("/")} ripple={false} >
+                    <Button style={{height: "100%"}} light auto onPress={() => goto("/")} ripple={false}  >
                         {t('navbar:homePage')}
                     </Button>
                     <Button style={{height: "100%"}} light auto onPress={() =>goto("/modeles")} ripple={false}>
                     {t('navbar:ourModels')}
                     </Button>
-                    <Button style={{height: "100%"}} light auto ripple={false}>
+                    <Button style={{height: "100%"}} light auto ripple={false} onPress={() => window.location.href='https://www.seloger.com/professionnels/constructeurs/paris-12eme-arrondissement-75012/agence-322743/'}>
                     {t('navbar:ourArticles')}
                     </Button>
                     <Button style={{height: "100%"}} light auto ripple={false}>
