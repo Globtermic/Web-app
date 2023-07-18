@@ -1,9 +1,10 @@
 
     .constructionTextMainPresStyle {
+        
         position: absolute;
         right: 10px;
         top: 5%;
-        font-size: 300%;
+        font-size: 300% ;
         color: white; 
         font-family: Montserrat; 
         text-align: right; 
@@ -95,3 +96,18 @@
             text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff
     
         }
+        @media only screen and (max-width: 600px) {
+        .constructionTextMainPresStyle {
+            left:0px;
+            top: 10; 
+            font-size: 200%;
+            text-align: center;
+        }
+        .renovationTextMainPresStyle {           
+            position: absolute;
+            right: 0px;
+            top: 10;
+            font-size: 200% ;
+            text-align: center; 
+        }
+    }

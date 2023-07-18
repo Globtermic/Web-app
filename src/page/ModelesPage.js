@@ -4,7 +4,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom"
 
-
+import './ModelsPage.css';
 
 function CardModel({title, Data, path}) {
     const navigate = useNavigate()
@@ -15,21 +15,15 @@ function CardModel({title, Data, path}) {
         )
     }
 
-    return <Card variant="flat" style={{backgroundColor:'white', borderRadius:0, padding: -10, width:"100%", border: "1px solid black", alignItems:'center', overflow:'hidden', marginTop:'10px'}}>
+    return <Card variant="flat" className="cardImage">
     <Card.Body style={{marginTop:'-20px'}}>
         <Image src={Data[0]} width="100%" style={{ marginTop:0}}></Image>
     </Card.Body>
-    <Card.Footer style={{alignItems:'center', justifyContent:'center', }}>
-        <h1 style={{fontFamily:'Montserrat', fontWeight:'bold', fontSize:20}}>{title}</h1>
+    <Card.Footer className="cardContent">
+        <h1 className="cardTitle">{title}</h1>
         
     </Card.Footer>
-        <Button style={{
-            border: "3px solid #c99f69", 
-            backgroundColor:'white', 
-            color:"#c99f69", 
-            fontFamily:'Montserrat', 
-            fontWeight:'bold'
-            }} onPress={() => goto(path)}>
+        <Button className="modelButton" onPress={() => goto(path)}>
         DÉCOUVRIR CE MODELE
         </Button>
         <Spacer y={0.5}/>
@@ -42,11 +36,11 @@ export default function ModelesPage() {
         <Helmet>
         <title>Globtermic | Models</title>
         </Helmet>
-        <Spacer y={1} />
-        <div>
-            <h1 style={{textAlign:'center', fontFamily:'Montserrat'}}>DÉCOUVREZ NOS MODELES!</h1>
-        </div>
         <Spacer y={2} />
+        <div className="title">
+            <h1 >DÉCOUVREZ NOS MODÈLES!</h1>
+        </div>
+        <Spacer y={1} />
         <Grid.Container gap={2} justify="center" direction="column">
             <Grid sm direction="row">
         <CardModel title={"ESCENCIA"} Data={Escencia} path={"/Escencia"}/>
