@@ -13,7 +13,8 @@
     "react-helmet": "^6.1.0",
     "react-i18next": "^13.0.1",
     "react-router-dom": "^6.12.1",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "swiper": "^10.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
