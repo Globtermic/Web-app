@@ -1,9 +1,6 @@
 .modelButton {
-    border: 3px solid #c99f69;
-    background-color: white;
     font-family: Montserrat;
     font-weight: bold;
-    color: #c99f69;
 }
 
 .modelButton:hover {

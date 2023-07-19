@@ -6,7 +6,7 @@ import { useNavigation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Torres from '../assets/Torres/Torres - Vue de face 091222.jpg';
 import EndPage from '../Component/EndPage'
-import './ContactPage.css'
+import './ContactPage.css';
 
 
 
@@ -71,7 +71,19 @@ export default function ContactPage() {
       <Helmet>
          <title>Globtermic | Contact</title>
          </Helmet>
-      <Card className='form'>
+      <Card css={{backgroundColor:'white', 
+      padding:'3.125em', 
+      borderRadius:'10px', 
+      display:'flex', 
+      flexDirection:'column', 
+      alignItems:'center',
+      boxShadow:'5px 5px 15px -1px rgba(0,0,0,0.75)', 
+      maxWidth:'500px', 
+      maxHeight:'600px', 
+      marginLeft:'7%', 
+      marginRight:'7%', 
+      textAlign:'center',
+      marginTop:'5%'}} >
         <h1 className='contactTitle' >CONTACT</h1>
         <Grid.Container direction='row' gap={1} style={{justifyContent:'center'}}>
           <Grid>
@@ -88,7 +100,7 @@ export default function ContactPage() {
           <input ref={subject} className='form--input' placeholder={t('contactpage:subject')}></input>
           <input ref={message} className='form--input--message' placeholder={t('contactpage:message')}></input>
           <Grid style={{justifyContent:'center', display:'flex'}}>
-          <Button className='form--submit'>
+          <Button className='form--submit' css={{backgroundColor:'#558F36'}} >
           {t('contactpage:send')}
           </Button>
           </Grid>
