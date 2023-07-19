@@ -13,22 +13,15 @@ export default function ShopButton() {
     }
 
     return <div className="divAroundButton">
-        <Button className="buttonShop" icon={<IconShoppingCart/>}
+        <Button className="buttonShop"  css={{backgroundColor: 'transparent',
+    border: '3px solid #c99f69',
+    fontSize: '20px',
+    color: '#c99f69',
+    fontFamily: 'Montserrat',
+    fontWeight: 'inherit',
+    width: '300px',}} icon={<IconShoppingCart/>}
         onPress={() => goBack()}>
             Retour a la boutique
         </Button>
     </div>
 }
-
-
-{/* <div style={{display:"flex", alignItems:'center', justifyContent:'center'}}>
-<Button style={{ alignSelf:'center',
-backgroundColor:'transparent', 
-border: "3px solid #c99f69",
-fontSize:'20px',
-color:"#c99f69", 
-fontFamily:'Montserrat', 
-fontWeight:'inherit',
-zIndex:1}}
-onPress={() => goBack()}>Retour a la boutique</Button>
-</div> */}
