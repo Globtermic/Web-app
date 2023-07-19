@@ -12,6 +12,7 @@ import TransparenciaPage from "./page/Models/TransparenciaPage";
 import XcasaPage from "./page/Models/XcasaPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./languages";
+import EndPage from "./Component/EndPage";
 
 function App() {
   return (
@@ -35,7 +36,9 @@ function App() {
             <Route element={<XcasaPage/>} path="/Xcasa"/>
           </Routes>
         {/* </main> */}
+        <EndPage/>
       </BrowserRouter>
+      
     </div>
   );
 }
