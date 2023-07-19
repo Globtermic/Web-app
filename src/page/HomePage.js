@@ -143,7 +143,6 @@ export default function MainPresentation() {
       <PresentationRenovationAsset/>
       <PresentationAmenagementAsset/>
       <Spacer y={3}/>
-      <EndPage/>
     </div>
   )
 }
