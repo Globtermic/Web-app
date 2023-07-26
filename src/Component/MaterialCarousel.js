@@ -1,126 +1,82 @@
-import React, {useState, useRef} from 'react';
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import React from 'react';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import { Pagination, Card, Spacer, Image, Button } from '@nextui-org/react';
-import dummy from '../assets/materiauxBio.jpg';
-import { useTranslation } from 'react-i18next';
+import { Card,  Image, Grid } from '@nextui-org/react';
+import { BrowserView, MobileView } from 'react-device-detect';
 
 //use https://swiperjs.com/
 
-const styles = {
-  titleStyle: {
-    marginTop:20,
-    fontWeight: 'initial',
-    fontSize: 23,
-    marginLeft:7
-  },
-  textStyle: {
-    marginTop:10,
-    fontWeight: 'initial',
-    fontSize: 23,
-    marginLeft:7
-  }
-}
-
-function BioMaterial() {
-  const {t, i18n} = useTranslation();
-  return(
-    <div style={{height: "100%", width: "100%", alignItems:'center'}}>
-     <h1 style = {{color: '#558F36', textAlign:'center'}}>{t('homepage:ourMaterials').toUpperCase()}</h1>
-     <div style={{height: "100%", width: "100%", display: "flex"}}>
-      <div className='text' style={{height: "100%", width: "50%", alignItems:'center'}}>
-       
-      <h3 style ={styles.titleStyle}>{t('homepage:inOrderToBuildOurHouses')}</h3>
-        <h3 style ={styles.titleStyle}>{t('homepage:cLT')}</h3>
-        <h3 style={styles.titleStyle}>{t('homepage:cltResistance')}</h3>
-      </div>
-      <div className='image' style={{left: "50%", width:"50%"}}>
-        <Image src={dummy} style={{borderRadius:15}}
-        />
-      </div>
-      </div>
-    </div>
-  )
-}
-
-function SelfSufficiency() {
-  const {t, i18n} = useTranslation();
-  return(
-    <div style={{height: "100%", width: "100%", alignItems:'center'}}>
-     <h1 style = {{color: '#558F36', textAlign:'center'}}>{t('homepage:inRouteForSelfSufficentHouse').toUpperCase()}</h1>
-     <div style={{height: "100%", width: "100%", display: "flex"}}>
-      <div className='text' style={{height: "100%", width: "50%", alignItems:'center'}}>
-       
-        <h3 style ={styles.titleStyle}>{t('homepage:weAccompanyEveryoneToTheSelfSufficentHouse')}</h3>
-        <h3 style ={styles.titleStyle}>1. {t('homepage:solarPanels') }</h3>
-        <h3 style ={styles.textStyle}>2. {t('homepage:rainWaterRecuperation')}</h3>
-        <h3 style ={styles.textStyle}>3. {t('homepage:permaCulture')} </h3>
-      </div>
-      <div className='image' style={{left: "50%", width:"50%"}}>
-        <Image src={dummy} style={{borderRadius:15}}
-        />
-      </div>
-      </div>
-    </div>
-  )
-}
+import './Styles/MaterialCarousel.css';
+import Mur from '../assets/MaterialCarousel/146861139_3348520031920129_1214968104350249387_n.jpg'
+import Perma from '../assets/MaterialCarousel/perma.jpg'
 
 export default function MaterialCarousel() {
-    const [activeSlide, setActiveSlide] = useState(0);
-    const intervalRef = useRef(null);
-  
-    const handleSlideChange = (newSlide) => {
-      setActiveSlide(newSlide - 1);
-    };
-  
-    const startCarousel = () => {
-      intervalRef.current = setInterval(() => {
-        setActiveSlide((prevSlide) => (prevSlide + 1) % 2);
-      }, 4000);
-    };
-  
-    const stopCarousel = () => {
-      clearInterval(intervalRef.current);
-    };
-  
-    const handleMouseEnter = () => {
-      stopCarousel();
-    };
-  
-    const handleMouseLeave = () => {
-      stopCarousel();
-    };
-  
-    return (
-      
-      <div className="App" style={{height: "800px"}}>
-        {/* <Button onPress={() => console.log(activeSlide)}></Button> */}
-        <CarouselProvider
-          naturalSlideWidth={100}
-          naturalSlideHeight={100}
-          totalSlides={2}
-          currentSlide={activeSlide}
-          infinite
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          
-        >
-            <Spacer y={3}/>
-            <Card borderWeight='normal' variant='bordered' style={{width: "75%", left: "50%", top: "25px", height: "500px", maxWidth: "900px", transform: "translate(-50%)"}}>
-                <Slider>
-                     <Slide index={0} ><SelfSufficiency/></Slide>
-                    <Slide index={1}><BioMaterial/></Slide>
-              </Slider>
-            </Card>
-          <Pagination style={{left: "50%", transform: "translate(-50%)"}}
-          onlyDots
-          total={2}
-          page={activeSlide + 1}
-          onChange={(newSlide) => handleSlideChange(newSlide)}
-          controls={false}
-          />
-        </CarouselProvider>
-      </div>
-      
-    );
+
+  return <div>
+    <BrowserView>
+    <Grid.Container style={{justifyContent:'center'}}>
+      <Grid direction='row' md style={{justifyContent:'center'}}>
+      <Card style={{ border:'1px solid #558F36', margin:"1%"}}>
+        <Card.Header style={{justifyContent:'center', fontFamily:'Montserrat'}} ><h2>NOS MATERIAUX</h2> </Card.Header>
+        <Grid.Container direction='row' >
+          <div style={{ margin:'1%', width:'48%'}}>
+            <Image src={Mur} style={{borderRadius:'5%'}}/>
+          </div>
+          <div style={{width: '48%', margin:'1%'}}>
+            <h3 style={{fontFamily:'Montserrat', marginTop:'15%'}} >Pour construire nos maisons, nous choisissons un panachage d'ossature Bois et de C.L.T</h3>
+            <h3 style={{fontFamily:'Montserrat', marginTop:'10%'}} >Le C.L.T, en anglais le cross laminated timber, en francais le lamellé de bois croisé, est un ensemble de bois collés, et est très résistant</h3>
+            <h3 style={{fontFamily:'Montserrat', marginTop:'10%'}} >Sa résistance est comparable au béton! Il existe des immeubles de plus de 20 étages construits avec cette technique</h3>
+          </div>
+        </Grid.Container>
+      </Card>
+     
+      <Card style={{ border:'1px solid #558F36', margin:"1%"}}>
+        <Card.Header style={{justifyContent:'center', fontFamily:'Montserrat'}} ><h2>LA MAISON AUTOSUFFISANTE</h2> </Card.Header>
+        <Grid.Container direction='row'>
+        <div style={{width:'48%', margin:'1%'}}>
+            <h3 style={{fontFamily:'Montserrat', marginTop:'15%'}} >Nous accompagnons ceux qui le souhaitent vers la maison autosuffisante</h3>
+            <h3 style={{fontFamily:'Montserrat', marginTop:'10%'}} >1. Les panneaux photovoltaïques installés sur les toit terrasses</h3>
+            <h3 style={{fontFamily:'Montserrat', marginTop:'10%'}} >2. La récupération et le filtrage d'eau de pluie</h3>
+            <h3 style={{fontFamily:'Montserrat', marginTop:'10%'}} >3. La possibilité d'avoir un jardin en permaculture</h3>
+        </div>
+        <div style={{width:'48%', margin:'1%'}}>
+          <Image src={Perma} style={{borderRadius: '5%'}}/>
+        </div>
+       </Grid.Container>
+      </Card>
+      </Grid>
+    </Grid.Container>
+  </BrowserView>
+  <MobileView>
+  <Grid.Container style={{justifyContent:'center'}}>
+      <Grid style={{justifyContent:'center'}}>
+      <Card style={{ border:'1px solid #558F36', margin:"1%", width:'98%'}}>
+        <Card.Header style={{justifyContent:'center', fontFamily:'Montserrat'}} ><h3>NOS MATERIAUX</h3> </Card.Header>
+          <div style={{ margin:'1%'}}>
+            <Image src={Mur} style={{borderRadius:'5%'}}/>
+          </div>
+          <div style={{margin:'1%'}}>
+            <h4 style={{fontFamily:'Montserrat', marginTop:'10%'}} >Pour construire nos maisons, nous choisissons un panachage d'ossature Bois et de C.L.T</h4>
+            <h4 style={{fontFamily:'Montserrat', marginTop:'10%'}} >Le C.L.T, en anglais le cross laminated timber, en francais le lamellé de bois croisé, est un ensemble de bois collés, et est très résistant</h4>
+            <h4 style={{fontFamily:'Montserrat', marginTop:'10%'}} >Sa résistance est comparable au béton! Il existe des immeubles de plus de 20 étages construits avec cette technique</h4>
+          </div>
+      </Card>
+      <Card style={{ border:'1px solid #558F36', margin:"1%", width:'98%'}}>
+        <Card.Header style={{justifyContent:'center', fontFamily:'Montserrat'}} ><h3>LA MAISON AUTOSUFFISANTE</h3> </Card.Header>
+        <Grid.Container direction='row'>
+          <div style={{margin:'1%'}}>
+          <Image src={Perma} style={{borderRadius: '5%'}}/>
+        </div>
+        <div style={{margin:'1%'}}>
+            <h4 style={{fontFamily:'Montserrat', marginTop:'10%'}} >Nous accompagnons ceux qui le souhaitent vers la maison autosuffisante</h4>
+            <h4 style={{fontFamily:'Montserrat', marginTop:'10%'}} >1. Les panneaux photovoltaïques installés sur les toit terrasses</h4>
+            <h4 style={{fontFamily:'Montserrat', marginTop:'10%'}} >2. La récupération et le filtrage d'eau de pluie</h4>
+            <h4 style={{fontFamily:'Montserrat', marginTop:'10%'}} >3. La possibilité d'avoir un jardin en permaculture</h4>
+        </div>
+        
+       </Grid.Container>
+      </Card>
+      </Grid>
+    </Grid.Container>
+  </MobileView>
+  </div>
 }
