@@ -1,5 +1,4 @@
-import { Text, Button, Row, Spacer, Grid} from "@nextui-org/react"
-import { useState } from "react"
+import { Spacer, Grid} from "@nextui-org/react"
 import { Link } from "react-router-dom"
 
 export default function EndPage() {
