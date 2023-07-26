@@ -15,14 +15,14 @@ function CardModel({title, Data, path}) {
         )
     }
 
-    return <Card variant="flat" css={{ backgroundColor:'white',
+    return <Card css={{ backgroundColor:'white',
         padding: '-10',
         width: '100%',
-        border: '1px solid black',
+        border: '1px solid gray',
         alignItems: 'center',
         overflow: 'hidden',
         marginTop: '10px',
-        borderRadius: '0%',}}>
+        shadow: "$xl"}}>
     <Card.Body style={{marginTop:'-20px'}}>
         <Image src={Data[0]} width="100%" style={{ marginTop:0}}></Image>
     </Card.Body>
@@ -55,26 +55,26 @@ export default function ModelesPage() {
         <Grid.Container justify="center" direction="column">
             <Grid sm direction="row">
                 <CardModel title={"ESCENCIA"} Data={Escencia} path={"/Escencia"}/>
-                <Spacer y={1}/>
+                <Spacer x={2}/>
                 <CardModel title={"MOVIDA"} Data={Movida} path={"/Movida"}/>
-                <Spacer y={1}/>
+                <Spacer x={2}/>
                 <CardModel title={"TERRAZZA"} Data={Terrazza} path={"/Terrazza"}/>
                 </Grid>
-                <Spacer y={1} />
+                <Spacer y={2} />
                     <Grid sm direction="row" >
                 <CardModel title={"NATURA"} Data={Natura} path={"/Natura"}/>
-                <Spacer y={1}/>
+                <Spacer x={2}/>
                 <CardModel title={"PATIO"} Data={Patio} path={"/Patio"}/>
-                <Spacer y={1}/>
+                <Spacer x={2}/>
                 <CardModel title={"TORRES"} Data={Torres} path={"/Torres"}/>
                 </Grid>
-                <Spacer y={1} />
+                <Spacer x={2} />
                     <Grid sm direction="row">
                 <CardModel title={"TRANSPARENCIA"} Data={Transparencia} path={"/Transparencia"}/>
-                <Spacer y={1}/>
+                <Spacer x={2}/>
                 <CardModel title={"XCASA"} Data={Xcasa} path={"/Xcasa"}/>
                 </Grid>
-                <Spacer y={1} />
+                <Spacer y={2} />
         </Grid.Container>
         </div>
     </div>
