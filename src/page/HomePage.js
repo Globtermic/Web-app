@@ -1,6 +1,6 @@
 import image from '../assets/Transparancia - vue 3_4.jpg'
 import React from 'react'
-import { Card, Col, Text, Image, Spacer, Grid } from "@nextui-org/react";
+import { Image, Spacer, } from "@nextui-org/react";
 import MaterialCarousel from '../Component/MaterialCarousel';
 import torres from '../assets/Torres_vueFace.jpg';
 import terrazza from '../assets/Terrazza_vue3.jpg';
@@ -9,7 +9,6 @@ import './HomePageStyles.css';
 import transparencia from '../assets/Transparancia_vueInt.jpg';
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
-import EndPage from '../Component/EndPage';
 
 function PresentationConstructionAsset() {
   const {t, i18n} = useTranslation();

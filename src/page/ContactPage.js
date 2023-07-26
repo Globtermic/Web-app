@@ -1,11 +1,8 @@
 import React, { useRef } from 'react'
-import { Card, Text, Spacer, Textarea, Grid, Button, Image } from '@nextui-org/react'
+import { Card, Spacer, Grid, Button } from '@nextui-org/react'
 import emailjs from '@emailjs/browser'
 import { Helmet } from 'react-helmet'
-import { useNavigation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import Torres from '../assets/Torres/Torres - Vue de face 091222.jpg';
-import EndPage from '../Component/EndPage'
 import './ContactPage.css';
 
 
@@ -107,121 +104,5 @@ export default function ContactPage() {
         </Grid.Container>
       </Card>
     </div>
-    // <div className='ContactPage' style={{
-    //     position: "absolute",
-    //     top: "0",
-    //     left: "0",
-    //     width: "100%",
-    //     height: "100%",
-    //     }}>
-    //       
-    //     <Card style={{ width: '75%', height: '75%', maxWidth: '1080px', transform: 'translate(-50%, -50%)', left: '50%', top: '50%' }}>
-    //       <Card.Header>
-    //         <Text h1>
-    //         {t('contactpage:contact')}
-    //         </Text>
-    //       </Card.Header>
-    //       <Card.Divider/>
-    //       <Card.Body>
-    //           <Grid.Container gap={2}>
-    //             <Grid xs={0} sm={6} direction='column'>
-    //               <Text h1>{t('contactpage:contact')}</Text>
-    //               <Spacer y={1}/>
-    //               <Text h3>contact@globtermic.com</Text>
-    //               <Spacer y={1}/>
-    //               <Text h3>03 44 02 59 50</Text>
-    //             </Grid>
-    //             <Grid xs={0} sm={6} alignContent='center' direction='column' justify='center' style={{width:"50%"}}>
-    //               <Textarea
-    //                 aria-label='name'
-    //                 labelPlaceholder={`${t('contactpage:firstName')} ${t('contactpage:lastName')}`}
-    //                 underlined
-    //                 width='90%'
-    //                 maxRows={2}
-    //                 ref={name}
-    //               />
-    //               <Spacer y={2}/>
-    //               <Textarea
-    //                 aria-label='email'
-    //                 labelPlaceholder={t('contactpage:email')}
-    //                 underlined
-    //                 width='90%'
-    //                 size="lg"
-    //                 maxRows={2}
-    //                 ref={email}
-    //               />
-    //               <Spacer y={2}/>
-    //               <Textarea
-    //                 aria-label='subject'
-    //                 labelPlaceholder={t('contactpage:subject')}
-    //                 underlined
-    //                 width='90%'
-    //                 size="lg"
-    //                 maxRows={2}
-    //                 ref={subject}
-    //               />
-    //               <Spacer y={2}/>
-    //               <Textarea
-    //                 aria-label='message'
-    //                 labelPlaceholder={t('contactpage:message')}
-    //                 underlined
-    //                 width='90%'
-    //                 size="lg"
-    //                 minRows rows={6}
-    //                 ref={message}
-    //               />
-    //               <Spacer y={1}/>
-    //               <Button style={{width: "90%"}}>
-    //               {t('contactpage:send')}
-    //               </Button>
-    //             </Grid>
-    //             <Grid sm={0} alignContent='center' justify='center' style={{width:"100%"}}>
-    //               <Textarea
-    //                 aria-label='name'
-    //                 labelPlaceholder={`${t('contactpage:firstName')} ${t('contactpage:lastName')}`}
-    //                 underlined
-    //                 width='90%'
-    //                 maxRows={2}
-    //                 ref={name}
-    //               />
-    //               <Spacer y={2}/>
-    //               <Textarea
-    //                 aria-label='email'
-    //                 labelPlaceholder={t('contactpage:email')}
-    //                 underlined
-    //                 width='90%'
-    //                 size="lg"
-    //                 maxRows={2}
-    //                 ref={email}
-    //               />
-    //               <Spacer y={2}/>
-    //               <Textarea
-    //                 aria-label='subject'
-    //                 labelPlaceholder={t('contactpage:subject')}
-    //                 underlined
-    //                 width='90%'
-    //                 size="lg"
-    //                 maxRows={2}
-    //                 ref={subject}
-    //               />
-    //               <Spacer y={2}/>
-    //               <Textarea
-    //                 aria-label='message'
-    //                 labelPlaceholder={t('contactpage:message')}
-    //                 underlined
-    //                 width='90%'
-    //                 size="lg"
-    //                 minRows rows={6}
-    //                 ref={message}
-    //               />
-    //               <Spacer y={1}/>
-    //               <Button style={{width: "90%"}}>
-    //               {t('contactpage:send')}
-    //               </Button>
-    //             </Grid> 
-    //           </Grid.Container>
-    //       </Card.Body>
-    //     </Card>
-    // </div>
   )
 }
