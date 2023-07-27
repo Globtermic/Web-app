@@ -1,6 +1,6 @@
 import React from 'react';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import { Card,  Image, Grid } from '@nextui-org/react';
+import { Card,  Image, Grid, Spacer } from '@nextui-org/react';
 import { BrowserView, MobileView } from 'react-device-detect';
 
 //use https://swiperjs.com/
@@ -28,7 +28,7 @@ export default function MaterialCarousel() {
           </div>
         </Grid.Container>
       </Card>
-     
+      <Spacer y={2}/>
       <Card style={{ border:'1px solid #558F36', margin:"1%"}}>
         <Card.Header style={{justifyContent:'center', fontFamily:'Montserrat'}} ><h2>LA MAISON AUTOSUFFISANTE</h2> </Card.Header>
         <Grid.Container direction='row'>
