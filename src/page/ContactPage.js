@@ -39,7 +39,7 @@ function IconMail(props) {
 }
 
 export default function ContactPage() {
-  const {t, i18n} = useTranslation();
+  const {t} = useTranslation();
   const name = useRef('')
   const email = useRef('')
   const subject = useRef('')
@@ -97,7 +97,7 @@ export default function ContactPage() {
           <input ref={subject} className='form--input' placeholder={t('contactpage:subject')}></input>
           <input ref={message} className='form--input--message' placeholder={t('contactpage:message')}></input>
           <Grid style={{justifyContent:'center', display:'flex'}}>
-          <Button className='form--submit' css={{backgroundColor:'#558F36'}} >
+          <Button className='form--submit' css={{backgroundColor:'#558F36'}} onPress={() => {sendEmail()}} >
           {t('contactpage:send')}
           </Button>
           </Grid>

@@ -1,4 +1,4 @@
-export default {
+const contactpage = {
     contact: "Contact",
     firstName: "First Name",
     lastName: "Last Name",
@@ -7,3 +7,5 @@ export default {
     message: "Message",
     send: "Send"
 }
+
+export default contactpage;

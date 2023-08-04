@@ -1,12 +1,12 @@
 import React from 'react'
 import { Navbar, Button } from '@nextui-org/react'
 import logo from '../assets/Logo_Globtermic.png'
-import { Link, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { useTranslation } from 'react-i18next'
 import './Styles/Navbar.css'
 
 export default function NavbarComponent() {
-    const {t, i18n} = useTranslation();
+    const {t} = useTranslation();
     const navigate = useNavigate()
 
     function goto(path) {

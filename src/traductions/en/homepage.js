@@ -1,4 +1,4 @@
-export default {
+const homepage = {
     catchSentance: 'reinventing our way of life and changing our vision of habitat',
     inRouteForSelfSufficentHouse: "towards the self-sufficient house",
     weAccompanyEveryoneToTheSelfSufficentHouse: "We accompany those who wish to become self-sufficient in their own house",
@@ -18,3 +18,5 @@ export default {
     permacultureGarden: "permaculture garden",
     poolConstruction: "pool constructions"
 }
+
+export default homepage;

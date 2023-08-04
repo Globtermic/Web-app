@@ -11,7 +11,7 @@ import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
 
 function PresentationConstructionAsset() {
-  const {t, i18n} = useTranslation();
+  const {t} = useTranslation();
   return <div style={{position: "relative"}} className='a'>
   <Image
     src={torres}
@@ -40,7 +40,7 @@ function PresentationConstructionAsset() {
 }
 
 function PresentationRenovationAsset() {
-  const {t, i18n} = useTranslation();
+  const {t} = useTranslation();
   return <div style={{position: "relative"}} className='a'>
   <Image
     src={terrazza}
@@ -68,7 +68,7 @@ function PresentationRenovationAsset() {
 }
 
 function PresentationAmenagementAsset() {
-  const {t, i18n} = useTranslation();
+  const {t} = useTranslation();
   return <div style={{position: "relative"}} className='a'>
   <Image
     src={transparencia}
@@ -97,7 +97,7 @@ function PresentationAmenagementAsset() {
 
 
 function IntroPage() {
-  const {t, i18n} = useTranslation();
+  const {t} = useTranslation();
   return (
     <div style={{position: "relative"}} className=''>
       <Image

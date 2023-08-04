@@ -2,8 +2,10 @@ import homepage from './homepage.js';
 import contactpage from './contactpage.js';
 import navbar from './navbar.js';
 
-export default {
+const en = {
     homepage,
     contactpage,
     navbar
 }
+
+export default en;
