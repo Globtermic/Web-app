@@ -78,9 +78,6 @@ import Marina6 from "../assets/MARINA/6.jpg";
 import Marina7 from "../assets/MARINA/7.jpg";
 import Marina8 from "../assets/MARINA/8.jpg";
 import Marina9 from "../assets/MARINA/9.jpg";
-import Marina10 from "../assets/MARINA/10.jpg";
-import Marina11 from "../assets/MARINA/11.jpg";
-import Marina12 from "../assets/MARINA/12.jpg";
 
 // -----------------------------------------------------------------------------------------------
 
@@ -216,10 +213,10 @@ export const Cala = [
 ]
 
 export const Dolcevita = [
-        Dolcevita1,
+        Dolcevita4,
         Dolcevita2,
         Dolcevita3,
-        Dolcevita4,
+        Dolcevita1,
         Dolcevita5,
         Dolcevita6,
         Dolcevita7,
@@ -250,12 +247,12 @@ export const Escencia = [
 ]
 
 export const Malou = [
+        Malou6,
         Malou1,
         Malou2,
         Malou3,
         Malou4,
         Malou5,
-        Malou6,
         Malou7,
         Malou8,
         Malou9,
@@ -344,8 +341,8 @@ export const Natura = [
 ];
 
 export const Torres = [
-        Torres1,
         Torres2 ,
+        Torres1,
         Torres3 ,
         Torres4,
         Torres5 ,
