@@ -1,5 +1,6 @@
 import { Card, Image, Grid, Spacer, Button } from "@nextui-org/react";
-import { Escencia, Movida, Terrazza, Natura, Patio, Torres, Transparencia, Xcasa } from "./ModelesData";
+import { Escencia, Patio, Natura, Terrazza, Torres, Transparencia, Xcasa, Movida, Unidad, Sombra,
+    Aberta, Cala, Dolcevita, Emporda, Malou, Marina } from "./page/ModelesData";
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom"
@@ -73,6 +74,28 @@ export default function ModelesPage() {
                 <CardModel title={"TRANSPARENCIA"} Data={Transparencia} path={"/Transparencia"}/>
                 <Spacer x={2}/>
                 <CardModel title={"XCASA"} Data={Xcasa} path={"/Xcasa"}/>
+                <Spacer x={2}/>
+                <CardModel title={"Unidad"} Data={Unidad} path={"/Unidad"}/>
+                </Grid>
+                <Spacer y={2} />
+                    <Grid sm direction="row" >
+                <CardModel title={"SOMBRA"} Data={Sombra} path={"/Sombra"}/>
+                <Spacer x={2}/>
+                <CardModel title={"ABERTA"} Data={Aberta} path={"/Aberta"}/>
+                <Spacer x={2}/>
+                <CardModel title={"CALA"} Data={Cala} path={"/Cala"}/>
+                </Grid>
+                <Spacer y={2} />
+                    <Grid sm direction="row" >
+                <CardModel title={"EMPORDA"} Data={Emporda} path={"/Emporda"}/>
+                <Spacer x={2}/>
+                <CardModel title={"MALOU"} Data={Malou} path={"/Malou"}/>
+                <Spacer x={2}/>
+                <CardModel title={"Dolcevita"} Data={Dolcevita} path={"/Dolcevita"}/>
+                </Grid>
+                <Spacer y={2} />
+                    <Grid sm direction="row" >
+                <CardModel title={"MARINA"} Data={Marina} path={"/Marina"}/>
                 </Grid>
                 <Spacer y={2} />
         </Grid.Container>
