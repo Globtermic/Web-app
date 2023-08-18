@@ -1,13 +1,13 @@
-import EscenciaPortrait1 from "../assets/Escencia/Portrait 1 091222.jpg";
-import EscenciaPortrait2 from "../assets/Escencia/Portrait 2 091222.jpg";
-import Escenciavue3 from "../assets/Escencia/Vue 3_4 091222.jpg";
-import EscenciaAerienne from "../assets/Escencia/Vue aÇrinne 091222.jpg";
-import EscenciacontrePlongee from "../assets/Escencia/Vue contre plongÇe 091222.jpg";
-import EscenciaFace from "../assets/Escencia/Vue de face 091222.jpg";
-import EscenciaDessus from "../assets/Escencia/Vue dessus 091222.jpg";
-import EscenciaInterieure1 from "../assets/Escencia/Vue intÇrieure 1 091222.jpg";
-import EscenciaInterieure2 from "../assets/Escencia/Vue intÇrieure 2 091222.jpg";
-import EscenciaCouper0 from "../assets/Escencia/Coupe R0 091222.jpg";
+import Escencia1 from "../assets/ESCENCIA/ext_1 - Photo (2).jpg";
+import Escencia2 from "../assets/ESCENCIA/ext_1 - Photo (2).jpg";
+import Escencia3 from "../assets/ESCENCIA/ext_1 - Photo (2).jpg";
+import Escencia4 from "../assets/ESCENCIA/ext_1 - Photo (2).jpg";
+import Escencia5 from "../assets/ESCENCIA/ext_1 - Photo (2).jpg";
+import Escencia6 from "../assets/ESCENCIA/ext_1 - Photo (2).jpg";
+import Escencia7 from "../assets/ESCENCIA/ext_1 - Photo (2).jpg";
+import Escencia8 from "../assets/ESCENCIA/ext_1 - Photo (2).jpg";
+import Escencia9 from "../assets/ESCENCIA/ext_1 - Photo (2).jpg";
+import Escencia10 from "../assets/ESCENCIA/ext_1 - Photo (2).jpg";
 
 // -----------------------------------------------------------------------------------------------
 
