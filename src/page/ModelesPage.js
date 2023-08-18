@@ -66,6 +66,8 @@ export default function ModelesPage() {
                 <CardModel title={"NATURA"} Data={Natura} path={"/Natura"}/>
                 <Spacer x={2}/>
                 <CardModel title={"TORRES"} Data={Torres} path={"/Torres"}/>
+                <Spacer x={2}/>
+                <CardModel title={"MARINA"} Data={Marina} path={"/Marina"}/>
                 </Grid>
                 <Spacer x={2} />
                     <Grid sm direction="row">
@@ -90,10 +92,6 @@ export default function ModelesPage() {
                 <CardModel title={"MALOU"} Data={Malou} path={"/Malou"}/>
                 <Spacer x={2}/>
                 <CardModel title={"Dolcevita"} Data={Dolcevita} path={"/Dolcevita"}/>
-                </Grid>
-                <Spacer y={2} />
-                    <Grid sm direction="row" >
-                <CardModel title={"MARINA"} Data={Marina} path={"/Marina"}/>
                 </Grid>
                 <Spacer y={2} />
         </Grid.Container>
