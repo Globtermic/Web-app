@@ -30,35 +30,6 @@ import MovidacoupeR1 from "../assets/Movida/Movida - Coupe R1 071222.jpg";
 
 // -----------------------------------------------------------------------------------------------
 
-import TerrazzaCoupeR0 from "../assets/Terrazza/Terrazza - Coupe R0.jpg";
-import TerrazzaCoupeR1 from "../assets/Terrazza/Terrazza - Coupe R1.jpg";
-import TerrazzaPortrait1 from "../assets/Terrazza/Terrazza - Portrait 1.jpg";
-import TerrazzaPortrait2 from "../assets/Terrazza/Terrazza - Portrait 2.jpg";
-import TerrazzaPortrait3 from "../assets/Terrazza/Terrazza - Portrait 3.jpg";
-import TerrazzaVue3 from "../assets/Terrazza/Terrazza - Vue 3_4  081222.jpg";
-import TerrazzaAerienne from "../assets/Terrazza/Terrazza - Vue aÇrienne V2 091222.jpg";
-import TerrazzaContrePlongee from "../assets/Terrazza/Terrazza - Vue contre plongÇe V2  091222.jpg";
-import TerrazzaFace from "../assets/Terrazza/Terrazza - Vue de face 081222.jpg";
-import TerrazzaDessus from "../assets/Terrazza/Terrazza - Vue dessus V2 091222.jpg";
-import Terrazzainterieur1 from "../assets/Terrazza/Terrazza - Vue intÇrieure 1.jpg";
-import Terrazzainterieur2 from "../assets/Terrazza/Terrazza - Vue intÇrieure 2.jpg";
-import Terrazzainterieur3 from "../assets/Terrazza/Terrazza - Vue intÇrieure 3.jpg";
-
-// -----------------------------------------------------------------------------------------------
-
-import NaturaPortrait1 from "../assets/Natura/Natura - Portrait 1.jpg";
-import NaturaPortrait2 from "../assets/Natura/Natura - Portrait 2.jpg";
-import NaturaPortrait3 from "../assets/Natura/Natura - Portrait 3 081222.jpg";
-import NaturaPortrait4 from "../assets/Natura/Natura - Portrait 4 081222.jpg";
-import NaturaVue3 from "../assets/Natura/Natura - Vue 3_4 081222.jpg";
-import NaturaVueContrePlongee from "../assets/Natura/Natura - Vue contre plongÇe.jpg";
-import NaturaVueFace from "../assets/Natura/Natura - Vue de face.jpg";
-import NaturaInterieur1 from "../assets/Natura/Natura - Vue intÇrieure 1  081222.jpg";
-import NaturaInterieur2 from "../assets/Natura/Natura - Vue intÇrieure 2  081222.jpg";
-import NaturaInterieur3 from "../assets/Natura/Natura - Vue intÇrieure 3  081222.jpg";
-
-// -----------------------------------------------------------------------------------------------
-
 import PatioInterieur1 from "../assets/Patio/Patio - Vue intÇrieure 1 091222.jpg";
 import PatioInterieur2 from "../assets/Patio/Patio - Vue intÇrieure 2 091222.jpg";
 import PatioInterieur3 from "../assets/Patio/Patio - Vue intÇrieure 3 091222.jpg";
@@ -79,28 +50,12 @@ import PatioVue3 from "../assets/Patio/Patio - Vue 3_4 091222.jpg";
 
 // -----------------------------------------------------------------------------------------------
 
-import TorresCoupeR0 from "../assets/Torres/Torres - Coupe R0 091222.jpg";
-import TorresCoupeR1 from "../assets/Torres/Torres - Coupe R1 091222.jpg";
-import TorresPortrait1 from "../assets/Torres/Torres - Portrait 1 091222.jpg";
-import TorresPortrait2 from "../assets/Torres/Torres - Portrait 2 091222.jpg";
-import TorresVue3 from "../assets/Torres/Torres - Vue 3_4 091222.jpg";
-import TorresContrePlongee from "../assets/Torres/Torres - Vue contre plongÇe 091222.jpg";
-import TorresVueFace from "../assets/Torres/Torres - Vue de face 091222.jpg";
-import TorresVueDessus from "../assets/Torres/Torres - Vue dessus 091222.jpg";
-import TorresInterieur1 from "../assets/Torres/Torres - Vue intÇrieure 1 091222.jpg";
-import TorresInterieur2 from "../assets/Torres/Torres - Vue intÇrieure 2 091222.jpg";
-import TorresInterieur3 from "../assets/Torres/Torres - Vue intÇrieure 3 091222.jpg";
-
-// -----------------------------------------------------------------------------------------------
-
-import TransparenciaCoupeR0 from "../assets/Transparencia/Transparancia - Vue R0.jpg";
-import TransparenciaCoupeR1 from "../assets/Transparencia/Transparancia - Vue R1.jpg";
-import TransparenciaAerienne from "../assets/Transparencia/Transparancia - vue aÇrienne.jpg";
-import TransparenciaContrePlongee from "../assets/Transparencia/Transparancia - Vue contre plongÇe.jpg";
-import TransparenciaVueDessus from "../assets/Transparencia/Transparancia - vue de dessus.jpg";
-import TransparenciaVueFace from "../assets/Transparencia/Transparancia - Vue de face.jpg";
-import TransparenciaInterieur from "../assets/Transparencia/Transparancia - Vue intÇrieure 1.jpg";
-import TransparenciaVue3 from "../assets/Transparencia/Transparancia - vue 3_4.jpg";
+import Transparencia1 from '../assets/TRANSPARENCIA/1.jpg'
+import Transparencia2 from '../assets/TRANSPARENCIA/2.jpg'
+import Transparencia3 from '../assets/TRANSPARENCIA/3.jpg'
+import Transparencia4 from '../assets/TRANSPARENCIA/4.jpg'
+import Transparencia5 from '../assets/TRANSPARENCIA/5.jpg'
+import Transparencia6 from '../assets/TRANSPARENCIA/6.jpg'
 
 // -----------------------------------------------------------------------------------------------
 
@@ -119,17 +74,163 @@ import XcasaInterieur1 from "../assets/Xcasa/Xcasa - Vue intÇrieure 1.jpg";
 import XcasaInterieur2 from "../assets/Xcasa/Xcasa - Vue intÇrieure 2 081222.jpg";
 import XcasaInterieur3 from "../assets/Xcasa/Xcasa - Vue intÇrieure 3 081222.jpg";
 
+// -----------------------------------------------------------------------------------------------
+
+import Natura1 from '../assets/NATURA/ext_1 - Photo (2).jpg';
+import Natura2 from '../assets/NATURA/ext_1 - Photo (3).jpg';
+import Natura3 from '../assets/NATURA/ext_1 - Photo (4).jpg';
+import Natura4 from '../assets/NATURA/ext_1 - Photo (5).jpg';
+import Natura5 from '../assets/NATURA/ext_1 - Photo.jpg';
+import Natura6 from '../assets/NATURA/rdc.jpg';
+import Natura7 from '../assets/NATURA/vue 3D_1 - Photo (2).jpg';
+import Natura8 from '../assets/NATURA/vue 3D_1 - Photo (3).jpg';
+import Natura9 from '../assets/NATURA/vue 3D_1 - Photo (4).jpg';
+import Natura10 from '../assets/NATURA/vue 3D_1 - Photo (5).jpg';
+import Natura11 from '../assets/NATURA/vue 3D_1 - Photo.jpg';
+
+// -----------------------------------------------------------------------------------------------
+
+import Sombra1 from '../assets/SOMBRA/Sombra 2_1 - Photo (2).jpg'
+import Sombra2 from '../assets/SOMBRA/Sombra 2_1 - Photo (3).jpg'
+import Sombra3 from '../assets/SOMBRA/Sombra 2_1 - Photo (4).jpg'
+import Sombra4 from '../assets/SOMBRA/Sombra 2_1 - Photo.jpg'
+import Sombra5 from '../assets/SOMBRA/Sombra et.jpg';
+import Sombra6 from '../assets/SOMBRA/Sombra rdc.jpg'
+import Sombra7 from '../assets/SOMBRA/Sombra_1 - Photo.jpg';
+import Sombra8 from '../assets/SOMBRA/Sombra_1 - Photo (2).jpg'
+import Sombra9 from '../assets/SOMBRA/Sombra_1 - Photo (3).jpg'
+import Sombra10 from '../assets/SOMBRA/Sombra_1 - Photo (4).jpg'
+
+// -----------------------------------------------------------------------------------------------
+
+import Terrazza1 from '../assets/TERRAZZA/1.jpg'
+import Terrazza2 from '../assets/TERRAZZA/2.jpg'
+import Terrazza3 from '../assets/TERRAZZA/3.jpg'
+import Terrazza4 from '../assets/TERRAZZA/4.jpg'
+import Terrazza5 from '../assets/TERRAZZA/5.jpg'
+import Terrazza6 from '../assets/TERRAZZA/6.jpg'
+import Terrazza7 from '../assets/TERRAZZA/7.jpg'
+import Terrazza8 from '../assets/TERRAZZA/8.jpg'
+import Terrazza9 from '../assets/TERRAZZA/9.jpg'
+import Terrazza10 from '../assets/TERRAZZA/10.jpg'
+import Terrazza11 from '../assets/TERRAZZA/11.jpg'
+import Terrazza12 from '../assets/TERRAZZA/12.jpg'
+
+// -----------------------------------------------------------------------------------------------
+
+import Torres1 from '../assets/TORRES/1.jpg'
+import Torres2 from '../assets/TORRES/2.jpg'
+import Torres3 from '../assets/TORRES/3.jpg'
+import Torres4 from '../assets/TORRES/4.jpg'
+import Torres5 from '../assets/TORRES/5.jpg'
+import Torres6 from '../assets/TORRES/6.jpg'
+import Torres7 from '../assets/TORRES/7.jpg'
+import Torres8 from '../assets/TORRES/8.jpg'
+import Torres9 from '../assets/TORRES/9.jpg'
+import Torres10 from '../assets/TORRES/10.jpg'
+
+// -----------------------------------------------------------------------------------------------
+
+import Unidad1 from '../assets/UNIDAD/1.jpg'
+import Unidad2 from '../assets/UNIDAD/2.jpg'
+import Unidad3 from '../assets/UNIDAD/3.jpg'
+import Unidad4 from '../assets/UNIDAD/4.jpg'
+import Unidad5 from '../assets/UNIDAD/5.jpg'
+import Unidad6 from '../assets/UNIDAD/6.jpg'
+import Unidad7 from '../assets/UNIDAD/7.jpg'
+import Unidad8 from '../assets/UNIDAD/8.jpg'
+import Unidad9 from '../assets/UNIDAD/9.jpg'
+import Unidad10 from '../assets/UNIDAD/10.jpg'
+import Unidad11 from '../assets/UNIDAD/11.jpg'
+
+// -----------------------------------------------------------------------------------------------
+
+import Xcasa1 from '../assets/X-CASA/1.jpg'
+import Xcasa2 from '../assets/X-CASA/2.jpg'
+import Xcasa3 from '../assets/X-CASA/3.jpg'
+import Xcasa4 from '../assets/X-CASA/4.jpg'
+import Xcasa5 from '../assets/X-CASA/5.jpg'
+import Xcasa6 from '../assets/X-CASA/6.jpg'
+import Xcasa7 from '../assets/X-CASA/7.jpg'
+import Xcasa8 from '../assets/X-CASA/8.jpg'
+import Xcasa9 from '../assets/X-CASA/9.jpg'
+import Xcasa10 from '../assets/X-CASA/10.jpg'
+import Xcasa11 from '../assets/X-CASA/11.jpg'
+import Xcasa12 from '../assets/X-CASA/12.jpg'
+import Xcasa13 from '../assets/X-CASA/13.jpg'
+import Xcasa14 from '../assets/X-CASA/14.jpg'
+import Xcasa15 from '../assets/X-CASA/15.jpg'
+import Xcasa16 from '../assets/X-CASA/16.jpg'
+
+export const Unidad = [
+        Unidad1,
+        Unidad2,
+        Unidad3,
+        Unidad4,
+        Unidad5,
+        Unidad6,
+        Unidad7,
+        Unidad8,
+        Unidad9,
+        Unidad10,
+        Unidad11,
+
+]
+
+export const Terrazza = [
+        Terrazza1,
+        Terrazza2,
+        Terrazza3,
+        Terrazza4,
+        Terrazza5,
+        Terrazza6,
+        Terrazza7,
+        Terrazza8,
+        Terrazza9,
+        Terrazza10,
+        Terrazza11,
+        Terrazza12,
+]
+
+export const Sombra = [
+        Sombra1,
+        Sombra2,
+        Sombra3,
+        Sombra4,
+        Sombra5,
+        Sombra6,
+        Sombra7,
+        Sombra8,
+        Sombra9,
+        Sombra10,
+]
+
+export const Natura = [
+
+        Natura1,
+        Natura2,
+        Natura3,
+        Natura4,
+        Natura5,
+        Natura6,
+        Natura7,
+        Natura8,
+        Natura9,
+        Natura10,
+        Natura11,
+];
+
 export const Escencia = [
-    EscenciaPortrait1,
-    EscenciaDessus,
-    EscenciaAerienne,
-    EscenciaFace,
-    EscenciaCouper0,
-    EscenciaInterieure1,
-    EscenciaInterieure2,
-    EscenciacontrePlongee,
-    Escenciavue3,
-    EscenciaPortrait2
+    Escencia1,
+    Escencia2,
+    Escencia3,
+    Escencia4,
+    Escencia5,
+    Escencia6,
+    Escencia7,
+    Escencia8,
+    Escencia9,
+    Escencia10,
 ]
 
 export const Movida = [
@@ -149,35 +250,6 @@ export const Movida = [
     MovidaVueExt,
     MovidaVueExt2,    
     MovidacoupeR1,
-]
-
-export const Terrazza = [
-    TerrazzaFace,
-    TerrazzaCoupeR1,
-    TerrazzaPortrait3,
-    TerrazzaAerienne,
-    TerrazzaCoupeR0,
-    Terrazzainterieur3,
-    Terrazzainterieur2,
-    Terrazzainterieur1,
-    TerrazzaContrePlongee,
-    TerrazzaDessus,
-    TerrazzaPortrait1,
-    TerrazzaPortrait2,
-    TerrazzaVue3,
-]
-
-export const Natura = [
-        NaturaPortrait3,
-        NaturaPortrait1,
-        NaturaPortrait2,
-        NaturaVueContrePlongee,
-        NaturaInterieur1,
-        NaturaInterieur3,
-        NaturaVue3,
-        NaturaVueFace,
-        NaturaPortrait4,
-        NaturaInterieur2,
 ]
 
 export const Patio = [
@@ -201,43 +273,45 @@ export const Patio = [
 ]
 
 export const Torres = [
-        TorresVueFace,
-        TorresCoupeR0 ,
-        TorresPortrait1 ,
-        TorresContrePlongee,
-        TorresCoupeR1 ,
-        TorresInterieur3,
-        TorresInterieur1,
-        TorresInterieur2,
-        TorresPortrait2 ,
-        TorresVue3 ,
-        TorresVueDessus ,
+        Torres1,
+        Torres2 ,
+        Torres3 ,
+        Torres4,
+        Torres5 ,
+        Torres6,
+        Torres7,
+        Torres8,
+        Torres9 ,
+        Torres10 ,
 ]
 
 export const Transparencia = [
-        TransparenciaAerienne,
-        TransparenciaCoupeR1,
-        TransparenciaContrePlongee,
-        TransparenciaVue3,
-        TransparenciaCoupeR0,
-        TransparenciaInterieur,
-        TransparenciaVueFace,
-        TransparenciaVueDessus,
+        Transparencia1,
+        Transparencia2,
+        Transparencia3,
+        Transparencia4,
+        Transparencia5,
+        Transparencia6,
+        Transparencia6,
 ]
 
 export const Xcasa = [
-        XcasaVue3,
-        XcasaExterieur1,
-        XcasaExterieur2,
-        XcasaVueFace,
-        XcasaCoupeR0,
-        XcasaInterieur2,
-        XcasaCoupeR1,
-        XcasaContrePlongee,
-        XcasaPortrait3,
-        XcasaPortrait2,
-        XcasaPortrait1,
-        XcasaVueDessus,
-        XcasaInterieur1,
-        XcasaInterieur3,
+        Xcasa1,
+        Xcasa2,
+        Xcasa3,
+        Xcasa4,
+        Xcasa5,
+        Xcasa6,
+        Xcasa7,
+        Xcasa8,
+        Xcasa9,
+        Xcasa10,
+        Xcasa11,
+        Xcasa12,
+        Xcasa13,
+        Xcasa14,
+        Xcasa13,
+        Xcasa14,
+        Xcasa15,
+        Xcasa15,
 ]

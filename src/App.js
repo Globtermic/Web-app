@@ -2,7 +2,7 @@ import NavbarComponent from "./Component/Navbar";
 import MainPresentation from "./page/HomePage"
 import ContactPage from "./page/ContactPage";
 import ModelesPage from "./page/ModelesPage";
-import { Escencia, Patio, Natura, Terrazza, Torres, Transparencia, Xcasa, Movida } from "./page/ModelesData";
+import { Escencia, Patio, Natura, Terrazza, Torres, Transparencia, Xcasa, Movida, Unidad } from "./page/ModelesData";
 import ModelComponent from "./Component/ModelComponent";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./languages";
@@ -28,6 +28,7 @@ function App() {
             <Route element={<ModelComponent Data={Torres} title={'Torres'}/>} path="/Torres"/>
             <Route element={<ModelComponent Data={Transparencia} title={'Transparencia'}/>} path="/Transparencia"/>
             <Route element={<ModelComponent Data={Xcasa} title={'Xcasa'}/>} path="/Xcasa"/>
+            <Route element={<ModelComponent Data={Unidad} title={'Unidad'}/>} path='/Unidad' />
           </Routes>
         {/* </main> */}
         <EndPage/>
