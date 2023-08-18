@@ -112,7 +112,6 @@ import Transparencia6 from '../assets/TRANSPARENCIA/6.jpg'
 import Natura1 from '../assets/NATURA/ext_1 - Photo (2).jpg';
 import Natura2 from '../assets/NATURA/ext_1 - Photo (3).jpg';
 import Natura3 from '../assets/NATURA/ext_1 - Photo (4).jpg';
-import Natura4 from '../assets/NATURA/ext_1 - Photo (5).jpg';
 import Natura5 from '../assets/NATURA/ext_1 - Photo.jpg';
 import Natura6 from '../assets/NATURA/rdc.jpg';
 import Natura7 from '../assets/NATURA/vue 3D_1 - Photo (2).jpg';
@@ -193,7 +192,6 @@ import Xcasa12 from '../assets/X-CASA/12.jpg'
 import Xcasa13 from '../assets/X-CASA/13.jpg'
 import Xcasa14 from '../assets/X-CASA/14.jpg'
 import Xcasa15 from '../assets/X-CASA/15.jpg'
-import Xcasa16 from '../assets/X-CASA/16.jpg'
 
 export const Aberta = [
         Aberta1,
@@ -336,7 +334,6 @@ export const Natura = [
         Natura1,
         Natura2,
         Natura3,
-        Natura4,
         Natura5,
         Natura6,
         Natura7,
