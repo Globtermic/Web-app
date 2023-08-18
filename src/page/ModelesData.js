@@ -43,16 +43,16 @@ import Emporda8 from "../assets/EMPORDA/8.jpg";
 
 // -----------------------------------------------------------------------------------------------
 
-import Escencia1 from "../assets/ESCENCIA/1";
-import Escencia2 from "../assets/ESCENCIA/2";
-import Escencia3 from "../assets/ESCENCIA/3";
-import Escencia4 from "../assets/ESCENCIA/4";
-import Escencia5 from "../assets/ESCENCIA/5";
-import Escencia6 from "../assets/ESCENCIA/6";
-import Escencia7 from "../assets/ESCENCIA/7";
-import Escencia8 from "../assets/ESCENCIA/8";
-import Escencia9 from "../assets/ESCENCIA/9";
-import Escencia10 from "../assets/ESCENCIA/10";
+import Escencia1 from "../assets/ESCENCIA/1.jpg";
+import Escencia2 from "../assets/ESCENCIA/2.jpg";
+import Escencia3 from "../assets/ESCENCIA/3.jpg";
+import Escencia4 from "../assets/ESCENCIA/4.jpg";
+import Escencia5 from "../assets/ESCENCIA/5.jpg";
+import Escencia6 from "../assets/ESCENCIA/6.jpg";
+import Escencia7 from "../assets/ESCENCIA/7.jpg";
+import Escencia8 from "../assets/ESCENCIA/8.jpg";
+import Escencia9 from "../assets/ESCENCIA/9.jpg";
+import Escencia10 from "../assets/ESCENCIA/10.jpg";
 
 // -----------------------------------------------------------------------------------------------
 
