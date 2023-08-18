@@ -1,0 +1,59 @@
+.modelButton {
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.modelButton:hover {
+    background-color: #c99f69;
+    color: white;
+}
+
+.cardImage {
+    background-color: white;
+    padding: -10;
+    width: 100%;
+    border: 1px solid black;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 10px;
+    border-radius: 0%;
+}
+
+.cardTitle {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.cardContent {
+    align-items: center;
+    justify-content: center;
+}
+
+.title h1 {
+    text-align: center;
+        font-size:30px; font-weight:300; color:#222; letter-spacing:1px;
+        text-transform: uppercase;
+    
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        grid-template-rows: 27px 0;
+        grid-gap: 20px;
+        align-items: center;
+        font-family: Montserrat;
+    }
+    
+    .title h1:after,.title h1:before {
+        content: " ";
+        display: block;
+        border-bottom: 1px solid #558F36;
+        border-top: 1px solid #558F36;
+        height: 5px;
+      background-color:white;
+    }
+    @media only screen and (max-width: 540px) {
+        .title h1 {
+            font-size:18px; font-weight:300; color:#222; letter-spacing:1px;
+        }
+    }
+

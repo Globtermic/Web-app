@@ -1,0 +1,20 @@
+.divArroundButtonContact {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.buttonContact {
+    background-color: gray;
+    font-family: Montserrat;
+    font-size: 16px;
+    height: 100px;
+
+}
+
+.buttonContact:hover {
+    background-color: #504f4f;
+    font-family: Montserrat;
+    font-size: 16px;
+    height: 100px;
+}

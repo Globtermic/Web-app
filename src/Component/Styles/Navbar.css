@@ -1,0 +1,13 @@
+.buttonStyle {
+    border-bottom: 3px solid transparent;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.buttonStyle:hover {
+    border-bottom: 3px solid #548F36;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #548F36;
+}
+
