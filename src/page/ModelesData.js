@@ -1,52 +1,102 @@
-import Escencia1 from "../assets/ESCENCIA/ext_1 - Photo (2).jpg";
-import Escencia2 from "../assets/ESCENCIA/ext_1 - Photo (2).jpg";
-import Escencia3 from "../assets/ESCENCIA/ext_1 - Photo (2).jpg";
-import Escencia4 from "../assets/ESCENCIA/ext_1 - Photo (2).jpg";
-import Escencia5 from "../assets/ESCENCIA/ext_1 - Photo (2).jpg";
-import Escencia6 from "../assets/ESCENCIA/ext_1 - Photo (2).jpg";
-import Escencia7 from "../assets/ESCENCIA/ext_1 - Photo (2).jpg";
-import Escencia8 from "../assets/ESCENCIA/ext_1 - Photo (2).jpg";
-import Escencia9 from "../assets/ESCENCIA/ext_1 - Photo (2).jpg";
-import Escencia10 from "../assets/ESCENCIA/ext_1 - Photo (2).jpg";
+// -----------------------------------------------------------------------------------------------
+
+import Aberta1 from "../assets/ABERTA/1.jpg";
+import Aberta2 from "../assets/ABERTA/2.jpg";
+import Aberta3 from "../assets/ABERTA/3.jpg";
+import Aberta4 from "../assets/ABERTA/4.jpg";
+import Aberta5 from "../assets/ABERTA/5.jpg";
+import Aberta6 from "../assets/ABERTA/6.jpg";
+import Aberta7 from "../assets/ABERTA/7.jpg";
+import Aberta8 from "../assets/ABERTA/8.jpg";
+import Aberta9 from "../assets/ABERTA/9.jpg";
 
 // -----------------------------------------------------------------------------------------------
 
-import MovidaInterieure1 from "../assets/Movida/Movida - Vue intÇrieure 1  071222.jpg";
-import MovidaInterieure2 from "../assets/Movida/Movida - Vue intÇrieure 2   071222.jpg";
-import MovidaInterieure3 from "../assets/Movida/Movida - Autre vue intÇrieure 071222.jpg";
-import MovidaInterieure4 from "../assets/Movida/Movida - Autre vue intÇrieure 2   071222.jpg";
-import MovidaInterieure5 from "../assets/Movida/Movida - Autre vue intÇrieure 3   071222.jpg";
-import MovidaPortrait1 from "../assets/Movida/Movida - Portrait 1   071222.jpg";
-import MovidaPortrait2 from "../assets/Movida/Movida - Portrait 2   071222.jpg";
-import MovidaPortrait3 from "../assets/Movida/Movida - Portrait 3 071222.jpg";
-import MovidaFace from "../assets/Movida/Movida - Vue de face 071222.jpg";
-import MovidaContrePlongee from "../assets/Movida/Movida - Vue contre plongÇe 071222_lumion.jpg";
-import MovidaDessus from "../assets/Movida/Movida - Vue dessus 071222.jpg";
-import MovidaVue3 from "../assets/Movida/Movida - Vue 3_4  071222.jpg";
-import MovidaVueExt from "../assets/Movida/Movida - Autre vue extÇrieure 1.jpg";
-import MovidaVueExt2 from "../assets/Movida/Movida - Autre vue extÇrieure 2 071222.jpg";
-import MovidaCoupeR0 from "../assets/Movida/Movida - Coupe R0 071222.jpg";
-import MovidacoupeR1 from "../assets/Movida/Movida - Coupe R1 071222.jpg";
+import Cala1 from "../assets/CALA/1.jpg";
+import Cala2 from "../assets/CALA/2.jpg";
+import Cala3 from "../assets/CALA/3.jpg";
+import Cala4 from "../assets/CALA/4.jpg";
+import Cala5 from "../assets/CALA/5.jpg";
+import Cala6 from "../assets/CALA/6.jpg";
+import Cala7 from "../assets/CALA/7.jpg";
 
 // -----------------------------------------------------------------------------------------------
 
-import PatioInterieur1 from "../assets/Patio/Patio - Vue intÇrieure 1 091222.jpg";
-import PatioInterieur2 from "../assets/Patio/Patio - Vue intÇrieure 2 091222.jpg";
-import PatioInterieur3 from "../assets/Patio/Patio - Vue intÇrieure 3 091222.jpg";
-import PatioInterieur4 from "../assets/Patio/Patio - Vue intÇrieure 4 091222.jpg";
-import PatioInterieur5 from "../assets/Patio/Patio - Vue intÇrieure 5 091222.jpg";
-import PatioInterieur6 from "../assets/Patio/Patio - Vue intÇrieure 6 091222.jpg";
-import PatioInterieur7 from "../assets/Patio/Patio - Vue intÇrieure 7 091222.jpg";
-import PatioInterieur8 from "../assets/Patio/Patio - Vue intÇrieure 8 091222.jpg";
-import PatioInterieur9 from "../assets/Patio/Patio - Vue intÇrieure 9 091222.jpg";
-import PatioInterieur10 from "../assets/Patio/Patio - Vue intÇrieure 10 091222.jpg";
-import PatioCoupeR0 from "../assets/Patio/Patio - Coupe R0 091222.jpg";
-import PatioPortrait1 from "../assets/Patio/Patio - Portrait 1 091222.jpg";
-import PatioPortrait2 from "../assets/Patio/Patio - Portrait 2 091222.jpg";
-import PatioContrePlongee from "../assets/Patio/Patio - Vue contre plongÇe 091222.jpg";
-import PatioVueFace from "../assets/Patio/Patio - Vue de face 091222.jpg";
-import PatioVueDessus from "../assets/Patio/Patio - Vue dessus 091222.jpg";
-import PatioVue3 from "../assets/Patio/Patio - Vue 3_4 091222.jpg";
+import Dolcevita1 from "../assets/DOLCEVITA/1.jpg";
+import Dolcevita2 from "../assets/DOLCEVITA/2.jpg";
+import Dolcevita3 from "../assets/DOLCEVITA/3.jpg";
+import Dolcevita4 from "../assets/DOLCEVITA/4.jpg";
+import Dolcevita5 from "../assets/DOLCEVITA/5.jpg";
+import Dolcevita6 from "../assets/DOLCEVITA/6.jpg";
+import Dolcevita7 from "../assets/DOLCEVITA/6.jpg";
+
+// -----------------------------------------------------------------------------------------------
+
+import Emporda1 from "../assets/EMPORDA/1.jpg";
+import Emporda2 from "../assets/EMPORDA/2.jpg";
+import Emporda3 from "../assets/EMPORDA/3.jpg";
+import Emporda4 from "../assets/EMPORDA/4.jpg";
+import Emporda5 from "../assets/EMPORDA/5.jpg";
+import Emporda6 from "../assets/EMPORDA/6.jpg";
+import Emporda7 from "../assets/EMPORDA/7.jpg";
+import Emporda8 from "../assets/EMPORDA/8.jpg";
+
+// -----------------------------------------------------------------------------------------------
+
+import Escencia1 from "../assets/ESCENCIA/1";
+import Escencia2 from "../assets/ESCENCIA/2";
+import Escencia3 from "../assets/ESCENCIA/3";
+import Escencia4 from "../assets/ESCENCIA/4";
+import Escencia5 from "../assets/ESCENCIA/5";
+import Escencia6 from "../assets/ESCENCIA/6";
+import Escencia7 from "../assets/ESCENCIA/7";
+import Escencia8 from "../assets/ESCENCIA/8";
+import Escencia9 from "../assets/ESCENCIA/9";
+import Escencia10 from "../assets/ESCENCIA/10";
+
+// -----------------------------------------------------------------------------------------------
+
+import Malou1 from "../assets/MALOU/1.jpg";
+import Malou2 from "../assets/MALOU/2.jpg";
+import Malou3 from "../assets/MALOU/3.jpg";
+import Malou4 from "../assets/MALOU/4.jpg";
+import Malou5 from "../assets/MALOU/5.jpg";
+import Malou6 from "../assets/MALOU/6.jpg";
+import Malou7 from "../assets/MALOU/7.jpg";
+import Malou8 from "../assets/MALOU/8.jpg";
+import Malou9 from "../assets/MALOU/9.jpg";
+
+
+// -----------------------------------------------------------------------------------------------
+
+import Marina1 from "../assets/MARINA/1.jpg";
+import Marina2 from "../assets/MARINA/2.jpg";
+import Marina3 from "../assets/MARINA/3.jpg";
+import Marina4 from "../assets/MARINA/4.jpg";
+import Marina5 from "../assets/MARINA/5.jpg";
+import Marina6 from "../assets/MARINA/6.jpg";
+import Marina7 from "../assets/MARINA/7.jpg";
+import Marina8 from "../assets/MARINA/8.jpg";
+import Marina9 from "../assets/MARINA/9.jpg";
+import Marina10 from "../assets/MARINA/10.jpg";
+import Marina11 from "../assets/MARINA/11.jpg";
+import Marina12 from "../assets/MARINA/12.jpg";
+
+// -----------------------------------------------------------------------------------------------
+
+import Movida1 from "../assets/MOVIDA/1.jpg";
+import Movida2 from "../assets/MOVIDA/2.jpg";
+import Movida3 from "../assets/MOVIDA/3.jpg";
+import Movida4 from "../assets/MOVIDA/4.jpg";
+import Movida5 from "../assets/MOVIDA/5.jpg";
+import Movida6 from "../assets/MOVIDA/6.jpg";
+import Movida7 from "../assets/MOVIDA/7.jpg";
+import Movida8 from "../assets/MOVIDA/8.jpg";
+import Movida9 from "../assets/MOVIDA/9.jpg";
+import Movida10 from "../assets/MOVIDA/10.jpg";
+
+// -----------------------------------------------------------------------------------------------
+
 
 // -----------------------------------------------------------------------------------------------
 
@@ -56,23 +106,6 @@ import Transparencia3 from '../assets/TRANSPARENCIA/3.jpg'
 import Transparencia4 from '../assets/TRANSPARENCIA/4.jpg'
 import Transparencia5 from '../assets/TRANSPARENCIA/5.jpg'
 import Transparencia6 from '../assets/TRANSPARENCIA/6.jpg'
-
-// -----------------------------------------------------------------------------------------------
-
-import XcasaExterieur1 from "../assets/Xcasa/Xcasa - Autre vue extÇrieure 1.jpg";
-import XcasaExterieur2 from "../assets/Xcasa/Xcasa -Autre vue extÇrieure 2.jpg";
-import XcasaCoupeR0 from "../assets/Xcasa/Xcasa -Coupe R0 081222.jpg";
-import XcasaCoupeR1 from "../assets/Xcasa/Xcasa - Coupe R1.jpg";
-import XcasaPortrait1 from "../assets/Xcasa/Xcasa - Portrait 1.jpg";
-import XcasaPortrait2 from "../assets/Xcasa/Xcasa - Portrait 2.jpg";
-import XcasaPortrait3 from "../assets/Xcasa/Xcasa - Portrait 3.jpg";
-import XcasaContrePlongee from "../assets/Xcasa/Xcasa - Vue contre plongÇe.jpg";
-import XcasaVue3 from "../assets/Xcasa/Xcasa - Vue 3_4.jpg";
-import XcasaVueFace from "../assets/Xcasa/Xcasa - Vue de face 081222.jpg";
-import XcasaVueDessus from "../assets/Xcasa/Xcasa - Vue dessus.jpg";
-import XcasaInterieur1 from "../assets/Xcasa/Xcasa - Vue intÇrieure 1.jpg";
-import XcasaInterieur2 from "../assets/Xcasa/Xcasa - Vue intÇrieure 2 081222.jpg";
-import XcasaInterieur3 from "../assets/Xcasa/Xcasa - Vue intÇrieure 3 081222.jpg";
 
 // -----------------------------------------------------------------------------------------------
 
@@ -162,6 +195,99 @@ import Xcasa14 from '../assets/X-CASA/14.jpg'
 import Xcasa15 from '../assets/X-CASA/15.jpg'
 import Xcasa16 from '../assets/X-CASA/16.jpg'
 
+export const Aberta = [
+        Aberta1,
+        Aberta2,
+        Aberta3,
+        Aberta4,
+        Aberta5,
+        Aberta6,
+        Aberta7,
+        Aberta8,
+        Aberta9,
+]
+
+export const Cala = [
+        Cala1,
+        Cala2,
+        Cala3,
+        Cala4,
+        Cala5,
+        Cala6,
+        Cala7,
+]
+
+export const Dolcevita = [
+        Dolcevita1,
+        Dolcevita2,
+        Dolcevita3,
+        Dolcevita4,
+        Dolcevita5,
+        Dolcevita6,
+        Dolcevita7,
+]
+
+export const Emporda = [
+        Emporda1,
+        Emporda2,
+        Emporda3,
+        Emporda4,
+        Emporda5,
+        Emporda6,
+        Emporda7,
+        Emporda8,
+        Emporda9,
+]
+
+export const Escencia = [
+    Escencia1,
+    Escencia2,
+    Escencia3,
+    Escencia4,
+    Escencia5,
+    Escencia6,
+    Escencia7,
+    Escencia8,
+    Escencia9,
+    Escencia10,
+]
+
+export const Malou = [
+        Malou1,
+        Malou2,
+        Malou3,
+        Malou4,
+        Malou5,
+        Malou6,
+        Malou7,
+        Malou8,
+        Malou9,
+]
+
+export const Marina = [
+        Marina1,
+        Marina2,
+        Marina3,
+        Marina4,
+        Marina5,
+        Marina6,
+        Marina7,
+        Marina8,
+        Marina9,
+]
+
+export const Movida = [
+        Movida1,
+        Movida2,
+        Movida3,
+        Movida4,
+        Movida5,
+        Movida6,
+        Movida7,
+        Movida8,
+        Movida9,
+]
+
 export const Unidad = [
         Unidad1,
         Unidad2,
@@ -219,58 +345,6 @@ export const Natura = [
         Natura10,
         Natura11,
 ];
-
-export const Escencia = [
-    Escencia1,
-    Escencia2,
-    Escencia3,
-    Escencia4,
-    Escencia5,
-    Escencia6,
-    Escencia7,
-    Escencia8,
-    Escencia9,
-    Escencia10,
-]
-
-export const Movida = [
-    MovidaFace,
-    MovidaDessus,
-    MovidaPortrait3,
-    MovidaContrePlongee,
-    MovidaCoupeR0,
-    MovidaInterieure1,
-    MovidaInterieure2,
-    MovidaInterieure3,
-    MovidaInterieure4,
-    MovidaInterieure5,
-    MovidaPortrait1,
-    MovidaPortrait2,
-    MovidaVue3,
-    MovidaVueExt,
-    MovidaVueExt2,    
-    MovidacoupeR1,
-]
-
-export const Patio = [
-        PatioVue3,
-        PatioInterieur1,
-        PatioPortrait2,
-        PatioCoupeR0,
-        PatioInterieur2,
-        PatioInterieur3,
-        PatioInterieur4,
-        PatioInterieur5,
-        PatioInterieur6,
-        PatioInterieur7,
-        PatioInterieur8,
-        PatioInterieur9,
-        PatioInterieur10,
-        PatioPortrait1,
-        PatioContrePlongee,
-        PatioVueFace,
-        PatioVueDessus,
-]
 
 export const Torres = [
         Torres1,
