@@ -1,77 +1,40 @@
+# Next.js & NextUI Template
 
-# Web-App
+This is a template for creating applications using Next.js 13 (app directory) and NextUI (v2).
 
-Here you can find the website of the company Globtermic
+## Technologies Used
 
+- [Next.js 13](https://nextjs.org/docs/getting-started)
+- [NextUI v2](https://nextui.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Tailwind Variants](https://tailwind-variants.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [next-themes](https://github.com/pacocoursey/next-themes)
 
-## Authors
-
-- [@Romain-Caillat](https://www.github.com/Romain-Caillat)
-
-
-## Our Norm
-
-We use [@gitmoji](https://gitmoji.dev/)
-
-## Tech Stack
-
-**Client:** React, Redux, NextUi, React-router-dom
-
-**Deploy:** Docker, Nginx
+## How to Use
 
 
-## Used By
+### Use the template with create-next-app
 
-This project is used by the following companies:
-
-- Globtermic
-
-
-## Deployment
-
-To deploy this project
-
-Set in .env your domain name,
-
-example:
+To create a new project based on this template using `create-next-app`, run the following command:
 
 ```bash
-  DOMAIN_NAME=`localhost`
+npx create-next-app -e https://github.com/nextui-org/next-app-template
 ```
+
+### Install dependencies
 
 ```bash
-  docker-compose up -d
+npm install
 ```
 
-
-## Run Locally
-
-Clone the project
+### Run the development server
 
 ```bash
-  git clone https://github.com/Globtermic/Web-app
+npm run dev
 ```
 
-Go to the project directory
+## License
 
-```bash
-  cd Web-app
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm start
-```
-
-
-## Documentation
-
-[Documentation](https://linktodocumentation)
-
+Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).
