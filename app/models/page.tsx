@@ -2,6 +2,7 @@ import { title } from "@/components/primitives";
 import {Card} from "@nextui-org/card";
 import {Button, ButtonGroup} from "@nextui-org/button";
 import {Image} from "@nextui-org/image";
+import ModelPage from '@/app/model/page';
 
 const ArrowIcon = () => {
     return (
@@ -49,11 +50,11 @@ function HouseCard() {
 }
 
 export default function AboutPage() {
-	return (
-		<div className="grid grid-cols-3 gap-6 w-full">
-			<HouseCard/>
-			<HouseCard/>
-			<HouseCard/>
-		</div>
+	return ( <ModelPage/>
+		// <div className="grid grid-cols-3 gap-6 w-full">
+		// 	<HouseCard/>
+		// 	<HouseCard/>
+		// 	<HouseCard/>
+		// </div>
 	);
 }
