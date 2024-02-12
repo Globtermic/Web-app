@@ -122,8 +122,67 @@
     width: 100%;
     left: 0%;
     position: absolute;
+    top: 110px;
 }
 
+
+.house-image-carousel {
+    border: 1px solid black;
+    height: 500px;
+    width: 57%;
+    min-width: 700px;
+    margin-bottom: 200px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.house-image-carousel:hover {
+    cursor: pointer;
+}
+
+.image-slider-container {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.image-slider-display {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.swiper-button-next, .swiper-button-prev {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: black;
+    padding: 25px;
+    border-radius: 6px;
+} 
+
+
+.house-image-display {
+    display: flex;
+    flex-direction: row;
+    gap: 4;
+}
+
+.house-image-show-off {
+    content: none;
+    border: 1px solid lightblue;
+    min-width: 500px;
+    margin-left: 20px;
+    height: 240px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.house-image-show-off:hover {
+    cursor: pointer;
+}
 
 @keyframes largerPoint {
   0% {width: 10px;}

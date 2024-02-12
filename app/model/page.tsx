@@ -1,7 +1,14 @@
 "use client"
-import {Image} from "@nextui-org/image";
+
 import './page.css';
 import { useCallback, useEffect, useState } from "react";
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import UnidadImg from '/images/unidad.jpg';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const Sidebar = () => {
     const [scrollY, setScrollY] = useState(0);
@@ -45,9 +52,14 @@ const Sidebar = () => {
             onClick={() => window.scrollTo({top:1520})} >Coût énergetique</div>}
         </div>
         <div className="inline-block content-none">
-        {!textAppear && <div className={`${scrollY > 2500 || scrollY < 2000 ? 'sidebar-element' : 'selected'}`}></div>}
-            {textAppear && <div className={`${scrollY > 2500 || scrollY < 2000 ? 'sidebar-element-text' : 'sidebar-element-text-index'}`} 
-            onClick={() => window.scrollTo({top:2020})} >Similaire</div>}
+        {!textAppear && 
+            <div className={`${scrollY > 2500 || scrollY < 2000 ? 'sidebar-element' : 'selected'}`}>
+            </div>}
+        {textAppear && 
+            <div className={`${scrollY > 2500 || scrollY < 2000 ? 'sidebar-element-text' : 'sidebar-element-text-index'}`} 
+            onClick={() => window.scrollTo({top:2020})} >
+                Similaire
+            </div>}
         </div>
 
     </div>
@@ -93,16 +105,58 @@ const ModelPageTitle = ({title}) => {
                 <h1 >{title}</h1>
             </div>
         </div>
-        <div className="content-none h-32 w-full" >
+        <div className="content-none h-16 w-full" >
         </div> 
     </div>
 }
 
+const Carousel = () => {
+   
+    return (
+    <div className="house-image-carousel">
+        <Swiper className='image-slider-container '
+        modules={[Navigation, Pagination]}
+        pagination={true}
+        navigation={true}
+        spaceBetween={4}
+        slidesPerView={1}
+        style={{"--swiper-pagination-color": 'black', "--swiper-navigation-color": "white",}}
+        >
+            <SwiperSlide>
+                <img src='/images/unidad.jpg' className='image-slider-display' />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img src='/images/unidad.jpg' className='image-slider-display' />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img src='/images/unidad.jpg' className='image-slider-display' />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img src='/images/unidad.jpg' className='image-slider-display' />
+            </SwiperSlide>
+        </Swiper>
+
+    
+
+        <div></div>
+    </div>)
+}
+
+const HouseImagesDisplay = () => {
+    return <div className='house-image-display'>
+        <Carousel/>
+        <div className='flex-col flex gap-5' >
+            <img src='/images/unidad.jpg' className='house-image-show-off' />
+            <img src='/images/unidad.jpg' className='house-image-show-off' />
+        </div>
+    </div>
+}
 
 export default function ModelPage() {
     return (<div>
         <Sidebar></Sidebar>
         <ModelPageTitle title={"UNIDAD"}/>
+        <HouseImagesDisplay/>
         <DummyText/>
         <p>.</p>
         <DummyText/>
