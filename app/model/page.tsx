@@ -86,10 +86,23 @@ const DummyText = () => {
     );
 }
 
+const ModelPageTitle = ({title}) => {
+    return <div>
+        <div className="title-wrapper">
+            <div className="title">
+                <h1 >{title}</h1>
+            </div>
+        </div>
+        <div className="content-none h-32 w-full" >
+        </div> 
+    </div>
+}
+
 
 export default function ModelPage() {
     return (<div>
         <Sidebar></Sidebar>
+        <ModelPageTitle title={"UNIDAD"}/>
         <DummyText/>
         <p>.</p>
         <DummyText/>

@@ -87,6 +87,44 @@
     animation: largerPoint 0.5s ease ;
 }
 
+.title-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.title h1 {
+    text-align: center;
+        font-size:50px; 
+        font-weight:300; 
+        color:#222;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        grid-template-rows: 27px 0;
+        grid-gap: 20px;
+        align-items: center;
+    }
+    
+    .title h1:after,.title h1:before {
+        content: " ";
+        display: block;
+        border-bottom: 1px solid #548F36;
+        border-top: 1px solid #548F36;
+        height: 5px;
+      background-color:#f8f8f8;
+    }
+    
+
+.title-wrapper {
+    width: 100%;
+    left: 0%;
+    position: absolute;
+}
+
+
 @keyframes largerPoint {
   0% {width: 10px;}
   /* 50% {width: 20px;} */
