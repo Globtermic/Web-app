@@ -37,27 +37,27 @@ const Sidebar = () => {
             onClick={() => window.scrollTo({top:0})} >Presentation</div>}
         </div>
         <div className="inline-block content-none">
-        {!textAppear && <div className={`${scrollY > 900 || scrollY < 200 ? 'sidebar-element' : 'selected'}`}></div>}
-            {textAppear && <div className={`${scrollY > 900 || scrollY < 200 ? 'sidebar-element-text' : 'sidebar-element-text-index'}`} 
-            onClick={() => window.scrollTo({top:220})} >Description</div>}
+        {!textAppear && <div className={`${scrollY > 1300 || scrollY < 700 ? 'sidebar-element' : 'selected'}`}></div>}
+            {textAppear && <div className={`${scrollY > 1300 || scrollY < 700 ? 'sidebar-element-text' : 'sidebar-element-text-index'}`} 
+            onClick={() => window.scrollTo({top:700})} >Description</div>}
         </div>
         <div className="inline-block content-none">
-        {!textAppear && <div className={`${scrollY > 1500 || scrollY < 900 ? 'sidebar-element' : 'selected'}`}></div>}
-            {textAppear && <div className={`${scrollY > 1500 || scrollY < 900 ? 'sidebar-element-text' : 'sidebar-element-text-index'}`} 
-            onClick={() => window.scrollTo({top:920})} >Caracteristiques</div>}
+        {!textAppear && <div className={`${scrollY > 2000 || scrollY < 1300 ? 'sidebar-element' : 'selected'}`}></div>}
+            {textAppear && <div className={`${scrollY > 2000 || scrollY < 1300 ? 'sidebar-element-text' : 'sidebar-element-text-index'}`} 
+            onClick={() => window.scrollTo({top:1320})} >Caracteristiques</div>}
         </div>
         <div className="inline-block content-none">
-        {!textAppear && <div className={`${scrollY > 2000 || scrollY < 1500 ? 'sidebar-element' : 'selected'}`}></div>}
-            {textAppear && <div className={`${scrollY > 2000 || scrollY < 1500 ? 'sidebar-element-text' : 'sidebar-element-text-index'}`} 
-            onClick={() => window.scrollTo({top:1520})} >Coût énergetique</div>}
+        {!textAppear && <div className={`${scrollY > 2500 || scrollY < 2000 ? 'sidebar-element' : 'selected'}`}></div>}
+            {textAppear && <div className={`${scrollY > 2500 || scrollY < 2000 ? 'sidebar-element-text' : 'sidebar-element-text-index'}`} 
+            onClick={() => window.scrollTo({top:2020})} >Coût énergetique</div>}
         </div>
         <div className="inline-block content-none">
         {!textAppear && 
-            <div className={`${scrollY > 2500 || scrollY < 2000 ? 'sidebar-element' : 'selected'}`}>
+            <div className={`${scrollY < 2500 ? 'sidebar-element' : 'selected'}`}>
             </div>}
         {textAppear && 
-            <div className={`${scrollY > 2500 || scrollY < 2000 ? 'sidebar-element-text' : 'sidebar-element-text-index'}`} 
-            onClick={() => window.scrollTo({top:2020})} >
+            <div className={`${scrollY < 2500 ? 'sidebar-element-text' : 'sidebar-element-text-index'}`} 
+            onClick={() => window.scrollTo({top:2520})} >
                 Similaire
             </div>}
         </div>
